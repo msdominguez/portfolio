@@ -1,5 +1,15 @@
 var express = require("express");
 var app = express();
-app.use(express.static("."));
+const router = express.Router();
+const path = require("path");
 
-app.listen(process.env.PORT || 4200);
+router.get("/idm231", function(req, res) {
+    res.sendFile(path.join(`${__dirname}/idm231/index.html`));
+});
+
+router.get("/idm231/detail", function(req, res) {
+    res.sendFile(path.join(`${__dirname}/idm231/detail.html`));
+});
+
+app.use(express.static("."), router);
+app.listen(process.env.port || 4200);
