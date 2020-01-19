@@ -13,11 +13,3 @@ router.get("/idm231/detail", function(req, res) {
 
 app.use(express.static("."), router);
 app.listen(process.env.PORT || 4200);
-
-/*
-var express = require("express");
-var app = express();
-app.use(express.static("."));
-
-app.listen(process.env.PORT || 4200);
-*/
