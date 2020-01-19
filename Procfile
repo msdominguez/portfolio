@@ -1,2 +1,1 @@
-web: node server
-web: node idm231/server
+web: node server && node idm231/server
