@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
@@ -289,10 +289,6 @@
 
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script>
-        // <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        // $(window.parent.document).find('head meta[name=viewport]').attr('content', '');
-        $(window.parent.document).find('head').appendChild($('#viewport'));
-
         function smoothScroll(goTo) {
             $("html, body").animate({
                     scrollTop: $(goTo).offset().top
