@@ -9,6 +9,10 @@ body {
     background-color: #fafafa;
 }
 
+button {
+    outline: none;
+}
+
 input {
     height: 30px;
     background-color: #f5f5f5;
@@ -17,6 +21,7 @@ input {
     padding: 6px 15px;
     font-size: 15px;
     font-family: Barlow;
+    outline: none;
 }
 
 h1 {
@@ -154,6 +159,10 @@ p {
 
 
 /* detail page */
+
+.detail-page {
+    min-height: 100vh;
+}
 
 .detail-img {
     max-height: 88vh;

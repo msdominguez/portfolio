@@ -1,10 +1,111 @@
 {
-    "Vir": {
-        "title": "Virgo",
-        "range": "Aug 22 - Sep 21",
-        "artist": "Kim Petras",
-        "dob": "August 27, 1992",
-        "description": "Kim Petras is a German singer, model and songwriter, currently based in Los Angeles. Since 2016, Petras has been releasing music as an independent artist under her own imprint, BunHead Records. Petras began recording music as a teenager, releasing her debut extended play One Piece of Tape in 2011",
-        "img": "./resources/kimpetras.jpg"
-    }
+    "zods": [{
+            "shortname": "Cap",
+            "title": "Capricorn",
+            "range": "Dec 22 - Jan 19",
+            "artist": "Meghan Trainor",
+            "dob": "Decemeber 22, 1993",
+            "description": "Meghan Elizabeth Trainor is an American singer-songwriter. Interested in music from a young age, she wrote, recorded, and produced three independently released albums between 2009 and 2011.",
+            "img": "./resources/meghan.png"
+        },
+        {
+            "shortname": "Sag",
+            "title": "Sagittarius",
+            "range": "Nov 22 - Dec 21",
+            "artist": "Taylor Swift",
+            "dob": "December 13, 1989",
+            "description": "Taylor Alison Swift is an American singer-songwriter. She is known for narrative songs about her personal life, which have received widespread media coverage. At age 14, Swift became the youngest artist signed by the Sony/ATV Music publishing house and, at age 15, she signed her first record deal.",
+            "img": "./resources/taylor.jpg"
+        },
+        {
+            "shortname": "Sco",
+            "title": "Scorpio",
+            "range": "Oct 24 - Nov 21",
+            "artist": "Lorde",
+            "dob": "November 7, 1996",
+            "description": "Ella Marija Lani Yelich-O'Connor, known professionally as Lorde, is a New Zealand singer and songwriter. Taking inspiration from aristocracy for her stage name, she is known for employing unconventional musical styles and thoughtful songwriting.",
+            "img": "./resources/lorde.png"
+        },
+        {
+            "shortname": "Lib",
+            "title": "Libra",
+            "range": "Sep 23 - Oct 23",
+            "artist": "Marina Diamandis",
+            "dob": "October 10, 1985",
+            "description": "Marina Lambrini Diamandis, known mononymously as Marina and previously by the stage name Marina and the Diamonds, is a Welsh singer and songwriter. Born in Brynmawr and raised in Abergavenny, she moved to London as a teenager to become a professional singer, despite having little formal musical experience.",
+            "img": "./resources/marina.jpg"
+        },
+        {
+            "shortname": "Vir",
+            "title": "Virgo",
+            "range": "Aug 23 - Sep 22",
+            "artist": "Kim Petras",
+            "dob": "August 27, 1992",
+            "description": "Kim Petras is a German singer, model and songwriter, currently based in Los Angeles. Since 2016, Petras has been releasing music as an independent artist under her own imprint, BunHead Records. Petras began recording music as a teenager, releasing her debut extended play One Piece of Tape in 2011.",
+            "img": "./resources/kimpetras.jpg"
+        },
+        {
+            "shortname": "Leo",
+            "title": "Leo",
+            "range": "Jul 23 - Aug 22",
+            "artist": "Charli XCX",
+            "dob": "August 2, 1992",
+            "description": "Charlotte Emma Aitchison, known professionally as Charli XCX, is an English singer and songwriter. Born in Cambridge and raised in Start Hill, Essex, she began posting songs on Myspace in 2008, which led to her discovery by a promoter who invited her to perform at warehouse raves and parties.",
+            "img": "./resources/charli.jpg"
+        },
+        {
+            "shortname": "Can",
+            "title": "Cancer",
+            "range": "Jun 22 - Jul 22",
+            "artist": "Ariana Grande",
+            "dob": "June 26, 1993",
+            "description": "Ariana Grande-Butera is an American singer, songwriter, and actress. Born in Boca Raton, Florida, Grande began her career in the 2008 Broadway musical 13 and rose to prominence for her role as Cat Valentine in the Nickelodeon television series Victorious, and in its spin-off, Sam & Cat.",
+            "img": "./resources/arianagrande.jpg"
+        },
+        {
+            "shortname": "Gem",
+            "title": "Gemini",
+            "range": "May 21 - Jun 21",
+            "artist": "Troye Sivan",
+            "dob": "June 5, 1995",
+            "description": "Troye Sivan Mellet is a South African–born Australian singer, songwriter, actor, and YouTuber. After gaining popularity as a singer on YouTube and in Australian talent competitions, Sivan signed with EMI Australia in 2013 and released his third extended play, TRXYE (2014), which peaked at number five on the U.S. Billboard 200.",
+            "img": "./resources/troye.jpg"
+        },
+        {
+            "shortname": "Tau",
+            "title": "Taurus",
+            "range": "Apr 20 - May 20",
+            "artist": "Adele",
+            "dob": "May 5, 1988",
+            "description": "Adele Laurie Blue Adkins MBE is an English singer-songwriter. After graduating from the BRIT School in 2006, Adele signed a recording contract with XL Recordings. In 2007, she received the Brit Awards Critics' Choice Award and won the BBC Sound of 2008 poll.",
+            "img": "./resources/adele.jpg"
+        },
+        {
+            "shortname": "Ari",
+            "title": "Aries",
+            "range": "Mar 21 - Apr 19",
+            "artist": "Lady Gaga",
+            "dob": "March 28, 1986",
+            "description": "Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is an American singer, songwriter, and actress. She is known for reinventing herself throughout her career and for her versatility in numerous areas of the entertainment industry.",
+            "img": "./resources/ladygaga.jpg"
+        },
+        {
+            "shortname": "Pis",
+            "title": "Pisces",
+            "range": "Feb 19 - Mar 20",
+            "artist": "Grimes",
+            "dob": "March 17, 1988",
+            "description": "Claire Elise Boucher, known professionally as Grimes, is a Canadian singer, songwriter, record producer and visual artist. Her music incorporates elements of varied styles and genres including dream pop, R&B, electronic music, and hip hop.",
+            "img": "./resources/grimes.jpg"
+        },
+        {
+            "shortname": "Aqu",
+            "title": "Aquarius",
+            "range": "Jan 20 - Feb 18",
+            "artist": "Shakira",
+            "dob": "Februrary 2, 1977",
+            "description": "Shakira Isabel Mebarak Ripoll is a Colombian singer, songwriter, dancer, record producer, and actress. Born and raised in Barranquilla, she made her recording debut under Sony Music Colombia at the age of 13.",
+            "img": "./resources/shakira.jpg"
+        }
+    ]
 }

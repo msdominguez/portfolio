@@ -9,34 +9,27 @@
 <body>
     <div id="detail" class="detail-page">
         <div class="content">
-            <img class="detail-img" src="./resources/kimpetras.jpg" />
+            <img id="detail-img" class="detail-img" />
             <div class="content-right">
                 <h2 class="detail-pre-header">
                     Your Pop star is ...
                 </h2>
 
-                <h1 id="detail-title" class="detail-title">
-                    Kim Petras
-                </h1>
-                <h2>Virgo - Aug 22 - Sep 21</h2>
-                <p class="caption">
-                    August 27, 1992
-                </p>
-                <p>
-                    Kim Petras is a German singer, model and songwriter, currently based in Los Angeles. Since 2016, Petras has been releasing music as an independent artist under her own imprint, BunHead Records. Petras began recording music as a teenager, releasing her
-                    debut extended play One Piece of Tape in 2011
-                </p>
+                <h1 id="detail-title" class="detail-title"></h1>
+                <h2 id="caption"></h2>
+                <p id="birthdate" class="caption"></p>
+                <p id="description"></p>
             </div>
         </div>
 
         <div class="bottom-bar">
-            <a href="/idm231"><img class="logo-home" src="https://static.tumblr.com/c0e4sbp/ONRq4agw4/zodiaclogo.png"></a>
+            <a href="/idm231"><img class="logo-home" src="./resources/zodiaclogo.png"></a>
 
             <div class="input-label-container">
                 <label class="input-label">YOUR BIRTHDATE</label>
                 <div class="input-container-detail">
-                    <input class="input-detail" type="date">
-                    <a href="/idm231/detail"><button class="btn--primary" onclick="showDetail()">GET RESULTS</button></a>
+                    <input id="birth-input-detail" class="input-detail" type="date">
+                    <button class="btn--primary" onclick="showDetail()">GET RESULTS</button>
                 </div>
             </div>
         </div>
@@ -44,8 +37,8 @@
     </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="client.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="client.js"></script> -->
 </body>
 
 </html>
