@@ -137,12 +137,20 @@ p {
 }
 
 .token {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-color: #f35bc0;
     margin: 1rem;
     box-shadow: 0px 4px 7px rgb(153, 55, 120, 0.5);
+    cursor: pointer;
+}
+
+#Vir:hover {
+    content: url("./resources/kimpetras-close.jpg");
 }
 
 .tokens {
@@ -165,26 +173,22 @@ p {
 }
 
 .detail-img {
-    max-height: 88vh;
-    z-index: -1;
-}
-
-.bottom-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 11px 10px 12px #cccccc;
-    height: 12vh;
-    bottom: 0;
-    padding: 0 2rem;
+    height: 100vh;
 }
 
 .content {
     display: flex;
-    z-index: -1;
 }
 
 .content-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.content-right-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,10 +198,6 @@ p {
 .detail-title {
     color: #f35bc0;
     text-shadow: 0px 4px 4px rgb(204, 204, 204, 0.7);
-}
-
-.input-container-detail {
-    display: flex;
 }
 
 .input-detail {
@@ -211,4 +211,14 @@ p {
 
 .detail-post-header {
     margin-bottom: 1rem;
+}
+
+.description {
+    padding-bottom: 3rem;
+}
+
+footer p {
+    bottom: 0;
+    font-size: 13px;
+    font-style: italic;
 }

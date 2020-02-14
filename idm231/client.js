@@ -17,7 +17,7 @@ function isValidDate(d) {
     return d instanceof Date && !isNaN(d);
 }
 
-function showDetail() {
+function showDetailInput() {
     let userBirth = new Date($("#birth-input").val());
 
     if (isValidDate(userBirth)) {
@@ -36,6 +36,18 @@ function showDetail() {
         });
     }
 }
+
+$(".token").click(function() {
+    let zod = $(this).attr("id");
+    $.ajax({
+        type: "GET",
+        url: "/idm231/detail",
+        success: function(msg) {
+            populatePage(zod);
+            $("#content").html(msg);
+        }
+    });
+});
 
 function populatePage(zod) {
     $.ajax({

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Pop Star Zodiac</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
@@ -11,14 +12,26 @@
         <div id="home" class="home">
             <div class="tokens tokens--left">
                 <div class="col">
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
+                    <div id="Cap" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/aries.png" />
+                    </div>
+                    <div id="Sag" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/sagittarius.png" />
+                    </div>
+                    <div id="Sco" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/scorpio.png" />
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
+                    <div id="Lib" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/libra.png" />
+                    </div>
+                    <div id="Vir" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/virgo.png" />
+                    </div>
+                    <div id="Leo" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/leo.png" />
+                    </div>
                 </div>
             </div>
 
@@ -29,7 +42,7 @@
                         <label class="input-label">YOUR BIRTHDATE</label>
                         <input id="birth-input" type="date" />
                     </div>
-                    <button class="btn--primary" onclick="showDetail()">
+                    <button class="btn--primary" onclick="showDetailInput()">
               GET RESULTS
             </button>
                 </div>
@@ -37,14 +50,26 @@
 
             <div class="tokens tokens--right">
                 <div class="col">
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
+                    <div id="Can" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/cancer.png" />
+                    </div>
+                    <div id="Gem" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/gemini.png" />
+                    </div>
+                    <div id="Tau" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/taurus.png" />
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
+                    <div id="ari-token" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/aries.png" />
+                    </div>
+                    <div id="pis-token" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/pisces.png" />
+                    </div>
+                    <div id="aqu-token" class="token">
+                        <img class="cap-img" src="./resources/zodiacs/aquarius.png" />
+                    </div>
                 </div>
             </div>
         </div>
