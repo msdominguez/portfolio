@@ -289,8 +289,23 @@
 
 
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="/__/firebase/7.8.1/firebase-app.js"></script>
     <script src="/__/firebase/7.8.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
     <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAKNNSByd6dTSurAodlIdDZ6c8i5NX89f8",
+            authDomain: "mariasdominguez-d084a.firebaseapp.com",
+            databaseURL: "https://mariasdominguez-d084a.firebaseio.com",
+            projectId: "mariasdominguez-d084a",
+            storageBucket: "mariasdominguez-d084a.appspot.com",
+            messagingSenderId: "381117452410",
+            appId: "1:381117452410:web:a51b43c71e4d91427aebc3",
+            measurementId: "G-9L7V00YCKZ"
+        };
+        if (!firebase.apps.length) {
+            firebase.initializeApp(firebaseConfig);
+        }
         firebase.analytics();
 
         function smoothScroll(goTo) {
