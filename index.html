@@ -288,7 +288,10 @@
 
 
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="/__/firebase/7.8.1/firebase-analytics.js"></script>
     <script>
+        firebase.analytics();
+
         function smoothScroll(goTo) {
             $("html, body").animate({
                     scrollTop: $(goTo).offset().top
