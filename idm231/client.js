@@ -25,21 +25,20 @@ function storeBirthInput() {
 }
 
 function showDetailInput() {
-    console.log(userBirth)
     if (isValidDate(userBirth)) {
         let userMonth = userBirth.getMonth() + 1;
         let userDay = userBirth.getUTCDate();
 
         let zod = dateToZodiac(userMonth, userDay);
 
-        // $.ajax({
-        //     type: "GET",
-        //     url: "/idm231/detail.html",
-        //     success: function(msg) {
-        // populatePage(zod);
-        // $("#content").html(msg);
-        //         }
-        //     });
+        $.ajax({
+            type: "GET",
+            url: "/idm231/detail.html",
+            success: function(msg) {
+                populatePage(zod);
+                $("#content").html(msg);
+            }
+        });
     }
 }
 
@@ -56,18 +55,6 @@ $(".token").click(function() {
     });
 });
 
-// $(".token").click(function() {
-//     let zod = $(this).attr("id");
-//     $.ajax({
-//         type: "GET",
-//         url: "/idm231/detail",
-//         success: function(msg) {
-//             populatePage(zod);
-//             $("#content").html(msg);
-//         }
-//     });
-// });
-
 function populatePage(zod) {
     $.ajax({
         type: "GET",
@@ -81,6 +68,8 @@ function populatePage(zod) {
                     $("#birthdate").html(val.dob);
                     $("#detail-img").attr("src", val.img);
                     $("#caption").html(`${val.title} - ${val.range}`);
+
+                    $('#detail').removeClass('hidden');
                 }
             });
         }
