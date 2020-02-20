@@ -13,27 +13,33 @@ let zods = [
     "Aqu"
 ];
 
+let userBirth;
+
 function isValidDate(d) {
     return d instanceof Date && !isNaN(d);
 }
 
-function showDetailInput() {
-    let userBirth = new Date($("#birth-input").val());
+function storeBirthInput() {
+    userBirth = new Date($("#birth-input").val());
+    console.log('stored', userBirth);
+}
 
+function showDetailInput() {
+    console.log(userBirth)
     if (isValidDate(userBirth)) {
         let userMonth = userBirth.getMonth() + 1;
         let userDay = userBirth.getUTCDate();
 
         let zod = dateToZodiac(userMonth, userDay);
 
-        $.ajax({
-            type: "GET",
-            url: "/idm231/detail",
-            success: function(msg) {
-                populatePage(zod);
-                $("#content").html(msg);
-            }
-        });
+        // $.ajax({
+        //     type: "GET",
+        //     url: "/idm231/detail.html",
+        //     success: function(msg) {
+        // populatePage(zod);
+        // $("#content").html(msg);
+        //         }
+        //     });
     }
 }
 
@@ -41,13 +47,26 @@ $(".token").click(function() {
     let zod = $(this).attr("id");
     $.ajax({
         type: "GET",
-        url: "/idm231/detail",
+        url: "/idm231/detail.html",
+        async: "false",
         success: function(msg) {
             populatePage(zod);
             $("#content").html(msg);
         }
     });
 });
+
+// $(".token").click(function() {
+//     let zod = $(this).attr("id");
+//     $.ajax({
+//         type: "GET",
+//         url: "/idm231/detail",
+//         success: function(msg) {
+//             populatePage(zod);
+//             $("#content").html(msg);
+//         }
+//     });
+// });
 
 function populatePage(zod) {
     $.ajax({

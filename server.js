@@ -17,4 +17,6 @@ app.get("/getZod", function(req, resp) {
     return resp.json(zodjson);
 });
 
+exports.app = functions.https.onRequest(app);
+
 app.listen(process.env.PORT || 4200);
