@@ -11,19 +11,18 @@ var express = require("express");
 var app = express();
 const router = express.Router();
 const path = require("path");
-const zodjson = require(`${__dirname}/../idm231/zod.json`);
+const zodjson = require(`${__dirname}/zod.json`);
 app.use(express.static("."), router);
 
 router.get("/idm231", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/../idm231/index.html`));
+    res.sendFile(path.join(`../idm231/index.html`));
 });
 
 router.get("/idm231/detail", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/../idm231/detail.html`));
+    res.sendFile(path.join(`../idm231/detail.html`));
 });
 
 app.get("/getZod", (req, resp) => {
-    console.log('hi')
     return resp.json(zodjson);
 });
 
