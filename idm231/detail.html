@@ -8,8 +8,24 @@
 </head>
 
 <body>
+
     <div id="detail" class="detail-page hidden">
+        <img class="help-icon" src="./resources/help-circle.svg" onclick="openModal()" />
+
         <div class="content">
+
+            <div id="modal" class="modal hidden">
+                <div class="modal-content" onblur="closeModal()">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>About</h2>
+                    <p>Find out which pop star has the same zodiac sign as you!</p>
+                    <h2>How to Use</h2>
+                    <p>Enter your birthdate in the input box by choosing the date on the calendar or type it in. Press the <span class="italic">Get Results</span> button to find out which pop star with the same zodiac sign as you.</p>
+                    <p>Hover over the circles with the zodiac symbols on them to see the pop stars for other zodiac signs. Click on them to see the detailed page for each pop star.</p>
+                    <p>On the detailed page, you can click the <span class="italic">Home</span> button to go home.</p>
+                </div>
+            </div>
+
             <img id="detail-img" class="detail-img" />
             <div class="content-right">
                 <div class="content-right-top">
@@ -37,8 +53,8 @@
     </div>
     </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <!-- <script src="client.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="client.js"></script>
 </body>
 
 </html>

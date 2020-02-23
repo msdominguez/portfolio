@@ -42,6 +42,20 @@ function showDetailInput() {
     }
 }
 
+function openModal() {
+    $('#modal').removeClass('hidden');
+}
+
+function closeModal() {
+    $('#modal').addClass('hidden');
+}
+
+$(window).click(function(e) {
+    if (e.target == $('#modal')[0]) {
+        closeModal();
+    }
+});
+
 $(".token").click(function() {
     let zod = $(this).attr("id");
     $.ajax({
