@@ -79,9 +79,11 @@ function populatePage(zod) {
                 if (val.shortname === zod) {
                     $("#description").html(val.description);
                     $("#detail-title").html(val.artist);
-                    $("#birthdate").html(val.dob);
+                    $("#birthdate").append(val.dob);
                     $("#detail-img").attr("src", val.img);
-                    $("#caption").html(`${val.title} - ${val.range}`);
+                    $("#caption").html(`${val.title} • ${val.range}`);
+                    $("#song-link").attr("href", val.songlink);
+                    $("#song-title").html(val.song);
 
                     $('#detail').removeClass('hidden');
                 }

@@ -54,6 +54,10 @@ p {
     word-break: break-word;
 }
 
+a {
+    color: #f35bc0;
+}
+
 .caption {
     font-size: 14px;
 }
@@ -200,8 +204,52 @@ p {
     cursor: pointer;
 }
 
+#Ari:hover {
+    content: url("./resources/closeups/ladygaga-closeup.png")
+}
+
+#Gem:hover {
+    content: url("./resources/closeups/troye-closeup.png")
+}
+
+#Can:hover {
+    content: url("./resources/closeups/arianagrande-closeup.png")
+}
+
+#Leo:hover {
+    content: url("./resources/closeups/charli-closeup.png");
+}
+
 #Vir:hover {
-    content: url("./resources/kimpetras-close.jpg");
+    content: url("./resources/closeups/kimpetras-closeup.png");
+}
+
+#Lib:hover {
+    content: url("./resources/closeups/marina-closeup.png")
+}
+
+#Sag:hover {
+    content: url("./resources/closeups/taylor-closeup.png")
+}
+
+#Cap:hover {
+    content: url("./resources/closeups/meghan-closeup.png")
+}
+
+#Aqu:hover {
+    content: url("./resources/closeups/shakira-closeup.png")
+}
+
+#Pis:hover {
+    content: url("./resources/closeups/grimes-closeup.png")
+}
+
+#Sco:hover {
+    content: url("./resources/closeups/lorde-closeup.png");
+}
+
+#Tau:hover {
+    content: url("./resources/closeups/adele-closeup.png")
 }
 
 .tokens {
@@ -266,6 +314,8 @@ p {
 
 .description {
     padding-bottom: 3rem;
+    text-align: left;
+    align-self: flex-start;
 }
 
 footer p {
