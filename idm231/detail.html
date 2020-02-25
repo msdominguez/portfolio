@@ -9,7 +9,7 @@
 
 <body>
 
-    <div id="detail" class="detail-page hidden">
+    <div id="detail" class="detail-page">
         <img class="help-icon" src="./resources/help-circle.svg" onclick="openModal()" />
 
         <div class="content">
@@ -35,9 +35,12 @@
 
                     <h1 id="detail-title" class="detail-title"></h1>
                     <h2 id="caption"></h2>
-                    <p id="birthdate" class="caption">Born: </p>
+                    <p id="birthdate" class="caption"></p>
                     <p id="description"></p>
                     <p class="description">Most popular song on Spotify: <a id="song-link" target="_blank"><span id="song-title" class="italic"></span></a></p>
+                    <audio id="audio" autoplay>
+                        <source id="audio-src" type="audio/mpeg">
+                    </audio>
 
                     <a href="/idm231"><button class="btn--primary">< Home</button></a>
                 </div>

@@ -14,6 +14,7 @@ let zods = [
 ];
 
 let userBirth;
+let zod;
 
 function isValidDate(d) {
     return d instanceof Date && !isNaN(d);
@@ -21,7 +22,6 @@ function isValidDate(d) {
 
 function storeBirthInput() {
     userBirth = new Date($("#birth-input").val());
-    console.log('stored', userBirth);
 }
 
 function showDetailInput() {
@@ -29,11 +29,12 @@ function showDetailInput() {
         let userMonth = userBirth.getMonth() + 1;
         let userDay = userBirth.getUTCDate();
 
-        let zod = dateToZodiac(userMonth, userDay);
+        zod = dateToZodiac(userMonth, userDay);
 
         $.ajax({
             type: "GET",
             url: "/idm231/detail.html",
+            async: "false",
             success: function(msg) {
                 populatePage(zod);
                 $("#content").html(msg);
@@ -57,11 +58,11 @@ $(window).click(function(e) {
 });
 
 $(".token").click(function() {
-    let zod = $(this).attr("id");
+    zod = $(this).attr("id");
+
     $.ajax({
         type: "GET",
         url: "/idm231/detail.html",
-        async: "false",
         success: function(msg) {
             populatePage(zod);
             $("#content").html(msg);
@@ -77,15 +78,17 @@ function populatePage(zod) {
         success: function(msg) {
             msg.zods.map(val => {
                 if (val.shortname === zod) {
+                    $("#audio-src").attr("src", val.song);
+
                     $("#description").html(val.description);
                     $("#detail-title").html(val.artist);
-                    $("#birthdate").append(val.dob);
+                    $("#birthdate").html(`Born: ${val.dob}`);
                     $("#detail-img").attr("src", val.img);
                     $("#caption").html(`${val.title} • ${val.range}`);
                     $("#song-link").attr("href", val.songlink);
-                    $("#song-title").html(val.song);
+                    $("#song-title").html(val.songtitle);
 
-                    $('#detail').removeClass('hidden');
+                    $('#audio').append(`<source id="audio-src" src="${val.songlink}" type="audio/mpeg">`)
                 }
             });
         }
