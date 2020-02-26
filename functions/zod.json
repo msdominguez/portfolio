@@ -8,7 +8,8 @@
             "description": "Meghan Elizabeth Trainor is an American singer-songwriter. Interested in music from a young age, she wrote, recorded, and produced three independently released albums between 2009 and 2011.",
             "img": "./resources/popstars/meghan.jpg",
             "songtitle": "Like I'm Gonna Lose You",
-            "songlink": "https://open.spotify.com/track/2YlZnw2ikdb837oKMKjBkW?si=j6zf119ySu23WwM0xtqlyg"
+            "songlink": "https://open.spotify.com/track/2YlZnw2ikdb837oKMKjBkW?si=j6zf119ySu23WwM0xtqlyg",
+            "song": "./resources/sounds/Meghan_cut.mp3"
         },
         {
             "shortname": "Sag",
@@ -19,7 +20,8 @@
             "description": "Taylor Alison Swift is an American singer-songwriter. She is known for narrative songs about her personal life, which have received widespread media coverage. At age 14, Swift became the youngest artist signed by the Sony/ATV Music publishing house and, at age 15, she signed her first record deal.",
             "img": "./resources/popstars/taylor.jpg",
             "songtitle": "Shake It Off",
-            "songlink": "https://open.spotify.com/track/1CiVz2WkmZRwhU3A6J2Gjz?si=6FyPrVyYQ02CFqR_tUdG5Q"
+            "songlink": "https://open.spotify.com/track/1CiVz2WkmZRwhU3A6J2Gjz?si=6FyPrVyYQ02CFqR_tUdG5Q",
+            "song": "./resources/sounds/Taylor_cut.mp3"
         },
         {
             "shortname": "Sco",
@@ -30,7 +32,8 @@
             "description": "Ella Marija Lani Yelich-O'Connor, known professionally as Lorde, is a New Zealand singer and songwriter. Taking inspiration from aristocracy for her stage name, she is known for employing unconventional musical styles and thoughtful songwriting.",
             "img": "./resources/popstars/lorde.jpg",
             "songtitle": "Royals",
-            "songlink": "https://open.spotify.com/track/2dLLR6qlu5UJ5gk0dKz0h3?si=RVYs8W5rSGGUeBPWX_uGqw"
+            "songlink": "https://open.spotify.com/track/2dLLR6qlu5UJ5gk0dKz0h3?si=RVYs8W5rSGGUeBPWX_uGqw",
+            "song": "./resources/sounds/Lorde_cut.mp3"
         },
         {
             "shortname": "Lib",
@@ -41,7 +44,8 @@
             "description": "Marina Lambrini Diamandis, known mononymously as Marina and previously by the stage name Marina and the Diamonds, is a Welsh singer and songwriter. Born in Brynmawr and raised in Abergavenny, she moved to London as a teenager to become a professional singer, despite having little formal musical experience.",
             "img": "./resources/popstars/marina.jpg",
             "songtitle": "Primadonna",
-            "songlink": "https://open.spotify.com/track/5tFMuAw6X2R4NLx97g7n9q?si=jCU77mINQAGppC2k-gJv9Q"
+            "songlink": "https://open.spotify.com/track/5tFMuAw6X2R4NLx97g7n9q?si=jCU77mINQAGppC2k-gJv9Q",
+            "song": "./resources/sounds/Marina_cut.mp3"
         },
         {
             "shortname": "Vir",
@@ -52,7 +56,8 @@
             "description": "Kim Petras is a German singer, model and songwriter, currently based in Los Angeles. Since 2016, Petras has been releasing music as an independent artist under her own imprint, BunHead Records. Petras began recording music as a teenager, releasing her debut extended play One Piece of Tape in 2011.",
             "img": "./resources/popstars/kimpetras.jpg",
             "songtitle": "Heart to Break",
-            "songlink": "https://open.spotify.com/track/2Cu5ExXidcoE4vF5hIYict?si=_nZSjGEFRFy7uKFdfb2b0Q"
+            "songlink": "https://open.spotify.com/track/2Cu5ExXidcoE4vF5hIYict?si=_nZSjGEFRFy7uKFdfb2b0Q",
+            "song": "./resources/sounds/Kim_cut.mp3"
         },
         {
             "shortname": "Leo",
@@ -63,7 +68,8 @@
             "description": "Charlotte Emma Aitchison, known professionally as Charli XCX, is an English singer and songwriter. Born in Cambridge and raised in Start Hill, Essex, she began posting songs on Myspace in 2008, which led to her discovery by a promoter who invited her to perform at warehouse raves and parties.",
             "img": "./resources/popstars/charli.jpg",
             "songtitle": "Boom Clap",
-            "songlink": "https://open.spotify.com/track/0Y1MWB026LYxGvhq4EcMiC?si=AX_HXw-0TP-k9gWRHZ-viQ"
+            "songlink": "https://open.spotify.com/track/0Y1MWB026LYxGvhq4EcMiC?si=AX_HXw-0TP-k9gWRHZ-viQ",
+            "song": "./resources/sounds/Charli_cut.mp3"
         },
         {
             "shortname": "Can",
@@ -74,7 +80,8 @@
             "description": "Ariana Grande-Butera is an American singer, songwriter, and actress. Born in Boca Raton, Florida, Grande began her career in the 2008 Broadway musical 13 and rose to prominence for her role as Cat Valentine in the Nickelodeon television series Victorious, and in its spin-off, Sam & Cat.",
             "img": "./resources/popstars/arianagrande.jpg",
             "songtitle": "7 Rings",
-            "songlink": "https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF?si=hwvxJH5yQ1O6cjqSnDDTdQ"
+            "songlink": "https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF?si=hwvxJH5yQ1O6cjqSnDDTdQ",
+            "song": "./resources/sounds/Ariana_cut.mp3"
         },
         {
             "shortname": "Gem",
@@ -85,7 +92,8 @@
             "description": "Troye Sivan Mellet is a South African–born Australian singer, songwriter, actor, and YouTuber. After gaining popularity as a singer on YouTube and in Australian talent competitions, Sivan signed with EMI Australia in 2013 and released his third extended play, TRXYE (2014), which peaked at number five on the U.S. Billboard 200.",
             "img": "./resources/popstars/troye.jpg",
             "songtitle": "There For You",
-            "songlink": "https://open.spotify.com/track/6jA8HL9i4QGzsj6fjoxp8Y?si=0kzQpKQ0SPO4CUAvgxEDcw"
+            "songlink": "https://open.spotify.com/track/6jA8HL9i4QGzsj6fjoxp8Y?si=0kzQpKQ0SPO4CUAvgxEDcw",
+            "song": "./resources/sounds/Troye_cut.mp3"
         },
         {
             "shortname": "Tau",
@@ -108,7 +116,8 @@
             "description": "Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is an American singer, songwriter, and actress. She is known for reinventing herself throughout her career and for her versatility in numerous areas of the entertainment industry.",
             "img": "./resources/popstars/ladygaga.jpg",
             "songtitle": "Shallow (A Star is Born)",
-            "songlink": "https://open.spotify.com/track/2VxeLyX666F8uXCJ0dZF8B?si=Pgflu2l1SEGXwlJ90qzWWQ"
+            "songlink": "https://open.spotify.com/track/2VxeLyX666F8uXCJ0dZF8B?si=Pgflu2l1SEGXwlJ90qzWWQ",
+            "song": "./resources/sounds/LadyGaga_cut.mp3"
         },
         {
             "shortname": "Pis",
@@ -119,7 +128,8 @@
             "description": "Claire Elise Boucher, known professionally as Grimes, is a Canadian singer, songwriter, record producer and visual artist. Her music incorporates elements of varied styles and genres including dream pop, R&B, electronic music, and hip hop.",
             "img": "./resources/popstars/grimes.jpg",
             "songtitle": "Oblivion",
-            "songlink": "https://open.spotify.com/track/4P6n0udLAnmCNXVcobYbsK?si=iLk_U2jtQw2rbNHII22DJw"
+            "songlink": "https://open.spotify.com/track/4P6n0udLAnmCNXVcobYbsK?si=iLk_U2jtQw2rbNHII22DJw",
+            "song": "./resources/sounds/Grimes_cut.mp3"
         },
         {
             "shortname": "Aqu",
@@ -130,7 +140,8 @@
             "description": "Shakira Isabel Mebarak Ripoll is a Colombian singer, songwriter, dancer, record producer, and actress. Born and raised in Barranquilla, she made her recording debut under Sony Music Colombia at the age of 13.",
             "img": "./resources/popstars/shakira.jpg",
             "songtitle": "Chantaje",
-            "songlink": "https://open.spotify.com/track/6mICuAdrwEjh6Y6lroV2Kg?si=-atCekDjQNmtQ2pTwXdF-A"
+            "songlink": "https://open.spotify.com/track/6mICuAdrwEjh6Y6lroV2Kg?si=-atCekDjQNmtQ2pTwXdF-A",
+            "song": "./resources/sounds/Shakira_cut.mp3"
         }
     ]
 }
