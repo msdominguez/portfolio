@@ -7,6 +7,8 @@
 body {
     margin: 0;
     background-color: #fafafa;
+    -webkit-perspective: 100rem;
+    perspective: 100rem;
 }
 
 button {
@@ -192,64 +194,64 @@ a {
 }
 
 .token {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    background-color: #f35bc0;
     margin: 1rem;
     box-shadow: 0px 4px 7px rgb(153, 55, 120, 0.5);
     cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    transition: -webkit-transform 1s ease-in;
+    transform-style: preserve-3d;
+    /* transition on hover out */
+    animation: out 1s ease-out forwards;
 }
 
-#Ari:hover {
-    content: url("./resources/closeups/ladygaga-closeup.png")
+.token:hover {
+    animation: in 1s ease-out forwards;
+    box-shadow: 0px 4px 7px rgb(0, 0, 0, 0.3);
 }
 
-#Gem:hover {
-    content: url("./resources/closeups/troye-closeup.png")
+.token div {
+    position: absolute;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    width: 150px;
+    height: 150px;
 }
 
-#Can:hover {
-    content: url("./resources/closeups/arianagrande-closeup.png")
+.token-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f35bc0;
+    z-index: 100;
 }
 
-#Leo:hover {
-    content: url("./resources/closeups/charli-closeup.png");
+.token-b {
+    transform: rotateY(-180deg);
 }
 
-#Vir:hover {
-    content: url("./resources/closeups/kimpetras-closeup.png");
+.token-b img {
+    border-radius: 50%;
 }
 
-#Lib:hover {
-    content: url("./resources/closeups/marina-closeup.png")
+@keyframes in {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
 }
 
-#Sag:hover {
-    content: url("./resources/closeups/taylor-closeup.png")
-}
-
-#Cap:hover {
-    content: url("./resources/closeups/meghan-closeup.png")
-}
-
-#Aqu:hover {
-    content: url("./resources/closeups/shakira-closeup.png")
-}
-
-#Pis:hover {
-    content: url("./resources/closeups/grimes-closeup.png")
-}
-
-#Sco:hover {
-    content: url("./resources/closeups/lorde-closeup.png");
-}
-
-#Tau:hover {
-    content: url("./resources/closeups/adele-closeup.png")
+@keyframes out {
+    0% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0);
+    }
 }
 
 .tokens {
