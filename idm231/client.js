@@ -27,6 +27,7 @@ function storeBirthInput() {
 function showDetailInput() {
     if (isValidDate(userBirth)) {
         $('input').removeClass('input-error');
+        $('#error').html('');
 
         let userMonth = userBirth.getMonth() + 1;
         let userDay = userBirth.getUTCDate();
