@@ -26,6 +26,10 @@ input {
     outline: none;
 }
 
+.input-error {
+    border: 1px solid #d10023;
+}
+
 h1 {
     font-family: Staatliches;
     letter-spacing: 2px;
@@ -64,7 +68,7 @@ a {
 }
 
 .caption {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .input-label {
@@ -75,6 +79,14 @@ a {
     letter-spacing: 1px;
     margin-left: 10px;
     margin-bottom: 5px;
+}
+
+.input-label--danger {
+    color: #d10023;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 .input-label-container {

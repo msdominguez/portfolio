@@ -26,6 +26,8 @@ function storeBirthInput() {
 
 function showDetailInput() {
     if (isValidDate(userBirth)) {
+        $('input').removeClass('input-error');
+
         let userMonth = userBirth.getMonth() + 1;
         let userDay = userBirth.getUTCDate();
 
@@ -40,6 +42,9 @@ function showDetailInput() {
                 $("#content").html(msg);
             }
         });
+    } else {
+        $('#error').html('Invalid date');
+        $('input').addClass('input-error');
     }
 }
 
