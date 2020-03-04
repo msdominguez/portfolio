@@ -100,7 +100,8 @@ function populatePage(zod) {
                         `<source id="audio-src" src="${val.songlink}" type="audio/mpeg">`
                     );
 
-                    $(".content-right").removeClass("hidden");
+                    $("#detail-pre-header").html("Your Pop star is ...");
+                    $("#song-intro").html("Most popular song on Spotify: ");
                 }
             });
         }
