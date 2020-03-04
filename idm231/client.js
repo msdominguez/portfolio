@@ -99,6 +99,8 @@ function populatePage(zod) {
                     $("#audio").append(
                         `<source id="audio-src" src="${val.songlink}" type="audio/mpeg">`
                     );
+
+                    $(".content-right").removeClass("hidden");
                 }
             });
         }
