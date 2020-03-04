@@ -102,6 +102,10 @@ function populatePage(zod) {
 
                     $("#detail-pre-header").html("Your Pop star is ...");
                     $("#song-intro").html("Most popular song on Spotify: ");
+
+                    $(".content-right-top").append(
+                        `<a href="/idm231"><button class="btn--primary"><h2>< Home</h2></Home></button></a>`
+                    );
                 }
             });
         }
