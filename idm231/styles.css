@@ -287,21 +287,23 @@ a {
 
 .detail-img {
     height: 100vh;
-    width: 100%;
     /* anim */
     opacity: 1;
+    margin-left: 0;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
+        margin-left: -20rem;
     }
     100% {
         opacity: 1;
+        margin-left: 0;
     }
 }
 
@@ -309,7 +311,12 @@ a {
     display: flex;
 }
 
+.content-left {
+    width: 50%;
+}
+
 .content-right {
+    width: 60%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -317,10 +324,19 @@ a {
     padding-bottom: 1rem;
     /* anim */
     opacity: 1;
-    animation-name: fadeInOpacity;
+    animation-name: fadeInOpacityRight;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 2s;
+}
+
+@keyframes fadeInOpacityRight {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .content-right-top {
@@ -373,6 +389,12 @@ footer p {
     }
     p {
         font-size: 16px;
+    }
+    .content-left {
+        width: 55%;
+    }
+    .content-right {
+        width: 45%;
     }
     .content-right-top {
         padding: 3rem 5rem 0rem 2.5rem;
