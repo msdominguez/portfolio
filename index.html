@@ -1,292 +1,98 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-    <!-- HOME -->
+    <div class="main-bg-screen"></div>
+    <img class="main-bg" src="./pink fractal.png" />
+
+    <nav class="logo-nav">
+        <ul class="main-nav">
+            <li>
+                <img class="logo" src="logo.svg" />
+            </li>
+            <li>
+                <h3 class="nav-link active">About</h3>
+            </li>
+            <li>
+                <h3 class="nav-link">Work</h3>
+            </li>
+            <li>
+                <h3 class="nav-link">Projects</h3>
+            </li>
+            <li>
+                <h3 class="nav-link"><a href="/resume">Resume</a></h3>
+            </li>
+        </ul>
+    </nav>
 
     <div class="home">
-        <div class="titles-container">
-            <h1 class="title">Maria Dominguez</h1>
-            <h2 class="sub-title">Designer & Developer</h2>
+        <div class="home-headers">
+            <h2 class="home-subheader">Designer & Developer</h2>
+            <h1 class="home-header">Maria Dominguez</h1>
         </div>
-
-        <img class="me-img" src="me.jpg">
-
-        <div class="links-container">
-            <h3 class="home-link" onclick="smoothScroll('.about')">About</h3>
-            <h3 class="home-link" onclick="smoothScroll('.experience')">Experience</h3>
-            <h3 class="home-link" onclick="smoothScroll('.projects')">Projects</h3>
-            <h3 class="home-link"> <a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">Resume</a></h3>
+        <div>
+            <img class="me-pic" src="./me.jpg" />
         </div>
-
-        <img class="down-img" src="down.png" onclick="smoothScroll('.about')">
     </div>
 
+    <!-- <div class="page-container">
+       
 
-    <!-- ABOUT -->
-
-    <div class="about">
-        <div class="header" id="header-about">
-            <ul class="nav-bar-links light-pink">
-                <li class="nav-bar-link active dark-pink" onclick="smoothScroll('.about')">About</li>
-                <li class="nav-bar-link light-pink" onclick="smoothScroll('.experience')">Experience</li>
-                <li class="nav-bar-link" onclick="smoothScroll('.projects')">Projects</li>
-                <a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">
-                    <li class="nav-bar-link light-pink">Resume</li>
-                </a>
-                <li class="nav-bar-link" onclick="smoothScroll('.home')"><img class="logo" src="logo.png"></li>
-            </ul>
+        <div class="footer">
+            <p class="footer-text">Copyright © 2020 Maria Dominguez</p>
         </div>
+    </div> -->
 
-
-        <h4 class="about-title">About Me</h4>
-        <div class="col-container">
-            <div class="col">
-                <div class="intro card">
-                    <p class="light-pink">
-                        <span class="intro-hiya">Hiya</span>, I’m Maria Dominguez and I like to design interfaces and develop various types of software. From time to time, I enjoying drawing characters from video games and anime. I also had a lot of fun
-                        designing and coding this website!
-                    </p>
-                </div>
-
-                <div class="intro card">
-                    <h5 class="dark-pink">Recent experience:</h5>
-                    <p class="light-pink">
-                        Comcast internship <br> Software Application Engineer <br><br> Languages:
-                        <ul class="light-pink">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Angular JavaScript with Redux.js</li>
+    <!-- HOME -->
+    <!-- 
+        <div id="home" class="home main-container">
+           
+            <div class="home-bottom">
+                <div class="card"><img class="me-pic" src="me.jpg" /></div>
+                <div class="cards-right">
+                    <div class="card bio">
+                        <p class="bio-text">
+                            <span class="hiya pink-highlight">Hiya</span>, I’m Maria Dominguez and I like to design interfaces and develop various types of software. From time to time, I enjoying drawing characters from video games and anime. I also had
+                            a lot of fun designing and coding this website!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-header">
+                            <span class="pink-highlight">Studies</span>
+                        </h4>
+                        <p>Drexel University, 2020</p>
+                        <p>Computer Science, B.S.</p>
+                        <h5 class="card-subheader">Concentrations =</h5>
+                        <ul>
+                            <li>
+                                <p class="home-list-item">{Human-Computer Interaction} ∪</p>
+                            </li>
+                            <li>
+                                <p class="home-list-item">{Software Engineering}</p>
+                            </li>
                         </ul>
-                    </p>
-                    <p class="light-pink card-footer-right">
-                        Apr-Sep 2019
-                    </p>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="intro card">
-                    <h5 class="dark-pink">Studies:</h5>
-                    <p class="light-pink">Drexel University <br> Computer Science, B.S.<br><br> Concentrations: <br>
-                        <ul class="light-pink">
-                            <li>Human-Computer Interaction</li>
-                            <li>Software Engineering</li>
+                        <h5 class="card-subheader">Minors =</h5>
+                        <ul>
+                            <li>
+                                <p class="home-list-item">{Chemistry} ∪</p>
+                            </li>
+                            <li>
+                                <p class="home-list-item">{Interactive Digital Media}</p>
+                            </li>
                         </ul>
-                    </p>
-                    <p class="light-pink">
-                        <br> Minors: <br>
-                        <ul class="light-pink">
-                            <li>Chemistry</li>
-                            <li>Interactive Digital Media</li>
-                        </ul>
-                    </p>
-                    <p class="light-pink card-footer-right">
-                        June 2020
-                    </p>
-                </div>
-
-                <div class="intro card">
-                    <h5 class="dark-pink">Contact:</h5>
-                    <p class="light-pink email"><a href="mailto:msd96@drexel.edu">
-                            msd96@drexel.edu
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- EXPERIENCE -->
-    <div class="experience">
-        <div class="header" id="header-exp">
-            <ul class="nav-bar-links light-yellow">
-                <li class="nav-bar-link" onclick="smoothScroll('.about')">About</li>
-                <li class="nav-bar-link active dark-yellow" onclick="smoothScroll('.experience')">Experience</li>
-                <li class="nav-bar-link" onclick="smoothScroll('.projects')">Projects</li>
-                <a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">
-                    <li class="nav-bar-link">Resume</li>
-                </a>
-                <li class="nav-bar-link" onclick="smoothScroll('.home')"><img class="logo" src="logo.png"></li>
-            </ul>
-        </div>
-
-        <h4 class="exp-title">Experience</h4>
-        <div class="col-container">
-            <div class="col">
-                <div class="card card--exp">
-                    <div class="card-header">
-                        <p class="dark-yellow">June 2020-</p>
-                        <p class="dark-yellow">Vanguard</p>
-                    </div>
-                    <h5 class="dark-yellow">Developer</h5>
-
-                    <p class="light-gray exp-text">Upcoming role</p>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card--exp">
-                    <div class="card-header">
-                        <p class="dark-yellow">Apr-Sep 2019</p>
-                        <p class="dark-yellow">Comcast</p>
-                    </div>
-                    <h5 class="dark-yellow">Software Application Engineer (Internship)</h5>
-                    <ul class="exp-list light-gray">
-                        <li>Programmed features in Angular JavaScript and Redux for a customer facing application handling millions of customer events</li>
-                        <br>
-                        <li>Designed and implemented reusable web components in JavaScript, TypeScript, and HTML</li>
-                        <br>
-                        <li>Collaborated with design to hone UX based on user feedback</li>
-                        <br>
-                        <li>Participated daily in Agile scrum, sprint planning, and quarterly planning</li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PROJECTS -->
-    <div class="projects">
-        <div id="header-proj" class="header">
-            <ul class="nav-bar-links light-green">
-                <li class="nav-bar-link light-green" onclick="smoothScroll('.about')">About</li>
-                <li class="nav-bar-link" onclick="smoothScroll('.experience')">Experience</li>
-                <li class="nav-bar-link active dark-green" onclick="smoothScroll('.projects')">Projects</li>
-                <a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">
-                    <li class="nav-bar-link">Resume</li>
-                </a>
-                <li class="nav-bar-link" onclick="smoothScroll('.home')"><img class="logo" src="logo.png"></li>
-            </ul>
-        </div>
-
-        <h4 class="proj-title">Projects</h4>
-        <div class="col">
-            <div class="card">
-                <div class="text-pic">
-                    <div class="col">
-                        <h3 class="dark-green">Drexel Scheduler</h3>
-                        <h5 class="dark-green">Designer & Developer</h5>
-                        <p class="light-gray proj-caption">Generate all possible schedules for your school term</p>
-                        <h5 class="dark-green">Tools:</h5>
-                        <p class="light-gray proj-caption">Figma, HTML, CSS, JavaScript, JQuery, AJAX, Node.js, Moment.js, Cheerio.js, Firebase</p>
-                    </div>
-                    <img class="proj-img" src="scheduler.png">
-                </div>
-                <div class="card-footer">
-                    <div class="card-footer-left">
-                        <p class="dark-green">Sep-Feb 2020</p>
-                        <p class="dark-green">Drexel University</p>
-                    </div>
-                    <div class="card-footer-right">
-                        <a href="https://drexel-scheduler.web.app/" target="_blank"><img class="icon" src="external-link.png"></a>
-                        <a href="https://github.com/msd96drexel/Drexel-Scheduler" target="_blank"><img class="icon external-link" src="github.png"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="text-pic">
-                    <div class="col">
-                        <h3 class="dark-green">Journal</h3>
-                        <h5 class="dark-green">Designer & Developer</h5>
-                        <p class="light-gray proj-caption">Create and view journal entries</p>
-                        <h5 class="dark-green">Tools:</h5>
-                        <p class="light-gray proj-caption">Java Swing, Java AWT</p>
-                    </div>
-                    <img class="proj-img jou" src="jou-2.png">
-                </div>
-                <div class="card-footer">
-                    <div class="card-footer-left">
-                        <p class="dark-green">July 2019</p>
-                        <p class="dark-green">Personal Project</p>
-                    </div>
-                    <div class="card-footer-right">
-                        <a href="https://github.com/msdominguez/jou-2" target="_blank">
-                            <img class="icon" src="github.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="text-pic">
-                    <div class="col">
-                        <h3 class="dark-green">Pandamonium RPG</h3>
-                        <h5 class="dark-green">Artist & Animator</h5>
-                        <p class="light-gray proj-caption">A top-down role-playing game where the main character is a panda</p>
-                        <h5 class="dark-green">Tools:</h5>
-                        <p class="light-gray proj-caption">GIMP, C#, Unity</p>
-                    </div>
-                    <img class="proj-img" src="panda.png">
-                </div>
-                <div class="card-footer">
-                    <div class="card-footer-left">
-                        <p class="dark-green">Jan-Jun 2017</p>
-                        <p class="dark-green">Drexel University</p>
-                    </div>
-                    <div class="card-footer-right">
-                        <a href="https://www.youtube.com/watch?v=GACBGHe_PCM&feature=youtu.be" target="_blank">
-                            <img class="icon" src="youtube.png">
-                        </a>
+                        <h4 class="card-header">
+                            <span class="pink-highlight">Contact</span>
+                        </h4>
+                        <p>m2015dominguez@gmail.com</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- ART -->
-    <div class="art">
-        <div id="header-art" class="header">
-            <ul class="nav-bar-links light-orange">
-                <li class="nav-bar-link" onclick="smoothScroll('.about')">About</li>
-                <li class="nav-bar-link" onclick="smoothScroll('.experience')">Experience</li>
-                <li class="nav-bar-link active dark-orange" onclick="smoothScroll('.projects')">Projects</li>
-                <a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">
-                    <li class="nav-bar-link">Resume</li>
-                </a>
-                <li class="nav-bar-link" onclick="smoothScroll('.home')"><img class="logo" src="logo.png"></li>
-            </ul>
-        </div>
-
-        <h4 class="art-title">Art</h4>
-        <div class="art-container">
-            <div class="card card--art">
-                <h5 class="dark-orange">Rosie</h5>
-                <p class="light-gray">Adobe Illustrator</p>
-                <div class="card outer-card">
-                    <img class="art-img" src="rosie.png">
-                </div>
-            </div>
-
-            <div class="card card--art">
-                <h5 class="dark-orange">Marina</h5>
-                <p class="light-gray">Adobe Illustrator</p>
-                <div class="card outer-card">
-                    <img class="art-img" src="marina.png">
-                </div>
-            </div>
-
-            <div class="card card--art">
-                <h5 class="dark-orange">Pikachu</h5>
-                <p class="light-gray">GIMP</p>
-                <div class="card outer-card">
-                    <img class="art-img" src="pikachu.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p class="light-gray">Copyright © 2020 Maria Dominguez</p>
-    </div>
-
-
+    </div> -->
 
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="/__/firebase/7.8.1/firebase-app.js"></script>
@@ -301,7 +107,7 @@
             storageBucket: "mariasdominguez-d084a.appspot.com",
             messagingSenderId: "381117452410",
             appId: "1:381117452410:web:a51b43c71e4d91427aebc3",
-            measurementId: "G-9L7V00YCKZ"
+            measurementId: "G-9L7V00YCKZ",
         };
         if (!firebase.apps.length) {
             firebase.initializeApp(firebaseConfig);
@@ -310,45 +116,44 @@
 
         function smoothScroll(goTo) {
             $("html, body").animate({
-                    scrollTop: $(goTo).offset().top
+                    scrollTop: $(goTo).offset().top,
                 },
                 800
             );
         }
 
         let win = $(window);
-        let headerAbout = $('#header-about');
-        let headerExp = $('#header-exp');
-        let headerProj = $('#header-proj');
-        let headerArt = $('#header-art');
-        let hclass = $('.header');
+        let headerAbout = $("#header-about");
+        let headerExp = $("#header-exp");
+        let headerProj = $("#header-proj");
+        let headerArt = $("#header-art");
+        let hclass = $(".header");
 
         win.scroll(function() {
             if (win.scrollTop() > headerAbout.offset().top) {
-                hclass.removeClass('sticky');
-                headerAbout.addClass('sticky');
+                hclass.removeClass("sticky");
+                headerAbout.addClass("sticky");
             }
 
             if (win.scrollTop() > headerExp.offset().top) {
-                hclass.removeClass('sticky');
-                headerExp.addClass('sticky');
+                hclass.removeClass("sticky");
+                headerExp.addClass("sticky");
             }
 
             if (win.scrollTop() > headerProj.offset().top) {
-                hclass.removeClass('sticky');
-                headerProj.addClass('sticky');
+                hclass.removeClass("sticky");
+                headerProj.addClass("sticky");
             }
 
             if (win.scrollTop() > headerArt.offset().top) {
-                hclass.removeClass('sticky');
-                headerArt.addClass('sticky');
+                hclass.removeClass("sticky");
+                headerArt.addClass("sticky");
             }
 
             // very top
             if (win.scrollTop() < headerAbout.offset().top) {
                 hclass.removeClass("sticky");
             }
-
         });
     </script>
 </body>
