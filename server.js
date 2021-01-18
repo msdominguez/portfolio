@@ -6,7 +6,7 @@ const zodjson = require('./idm231/zod.json');
 app.use(express.static("."), router);
 
 router.get("/idm231", function(req, res) {
-    res.sendFile(path.join('./idm231/index.html '));
+    res.sendFile(path.join('./idm231/index.html'));
 });
 
 router.get("/idm231/detail", function(req, res) {
@@ -19,4 +19,4 @@ app.get("/getZod", function(req, resp) {
 
 // exports.app = functions.https.onRequest(app);
 
-app.listen(4200);
+app.listen(process.env.PORT || 4200);
