@@ -1,5 +1,5 @@
 function onLoad() {
-    showProjectsPage();
+    showArtPage();
 }
 
 function showHomePage() {
@@ -28,7 +28,20 @@ function showWorkPage() {
 function showProjectsPage() {
     $('.page').hide();
     $('.nav-link').removeClass('active');
+    $('.toggle').removeClass('toggle-knob');
 
     $('#projects').show();
     $('.main-nav li h3:nth-last-child(1)').addClass('active');
+    $('.dev-toggle').addClass('toggle-knob');
+}
+
+function showArtPage() {
+    $('.page').hide();
+    $('.dev-toggle').addClass('toggle');
+    $('.nav-link').removeClass('active');
+    $('.toggle').removeClass('toggle-knob');
+
+    $('#art').show();
+    $('.main-nav li h3:nth-last-child(1)').addClass('active'); // projects
+    $('.art-toggle').addClass('toggle-knob');
 }

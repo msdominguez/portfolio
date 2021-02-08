@@ -111,6 +111,7 @@ ul {
 
 .logo-nav {
     display: flex;
+    flex-direction: column;
     padding: 5rem 4rem;
 }
 
@@ -174,6 +175,32 @@ ul {
 
 .page-top {
     padding-top: 14rem;
+}
+
+.dev-art {
+    display: flex;
+    align-self: flex-end;
+    margin: 1rem 10vw 0 0;
+    width: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--msd-pink-3-30);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.toggle-knob {
+    display: flex;
+    align-self: flex-end;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--msd-pink-3);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: width 2s;
 }
 
 
@@ -413,4 +440,35 @@ ul {
 .project-caption {
     color: var(--msd-gray-1);
     padding-left: 1rem;
+}
+
+
+/* art */
+
+.art-img {
+    width: 400px;
+    padding-bottom: 1rem;
+}
+
+.art-caption {
+    padding: 1rem 0;
+}
+
+.art-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5vw;
+    padding-bottom: 8rem;
+}
+
+.art-card-container .card {
+    margin: 2rem 1.5rem;
 }
