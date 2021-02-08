@@ -3,117 +3,399 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/png" href="./assets/pink fractal.png">
 </head>
 
-<body>
+<body onload="onLoad()">
     <div class="main-bg-screen"></div>
-    <img class="main-bg" src="./pink fractal.png" />
 
     <nav class="logo-nav">
         <ul class="main-nav">
-            <li>
-                <img class="logo" src="logo.svg" />
+            <li onclick="showHomePage()">
+                <img class="logo" src="./assets/logo.png" />
             </li>
-            <li>
-                <h3 class="nav-link active">About</h3>
+            <li onclick="showAboutPage()">
+                <h3 class="nav-link">About</h3>
             </li>
-            <li>
+            <li onclick="showWorkPage()">
                 <h3 class="nav-link">Work</h3>
             </li>
-            <li>
+            <li onclick="showProjectsPage()">
                 <h3 class="nav-link">Projects</h3>
             </li>
             <li>
-                <h3 class="nav-link"><a href="/resume">Resume</a></h3>
+                <h3 class="nav-link"><a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">Resume</a></h3>
             </li>
         </ul>
     </nav>
 
-    <div class="home">
+    <div id="home" class="home page">
         <div class="home-headers">
             <h2 class="home-subheader">Designer & Developer</h2>
             <h1 class="home-header">Maria Dominguez</h1>
         </div>
         <div>
-            <img class="me-pic" src="./me.jpg" />
+            <img class="me-pic" src="./assets/me.jpg" />
         </div>
     </div>
 
-    <!-- <div class="page-container">
-       
+    <div id="about" class="about page">
+        <div class="col about-left">
+            <div class="card">
+                <p class="bio-text">
+                    <span class="hiya">Hiya</span>, I’m Maria Dominguez and I like to design interfaces and develop various types of software. From time to time, I enjoying drawing characters from video games and anime. I also enjoyed designing and coding
+                    this website!
+                </p>
 
-        <div class="footer">
-            <p class="footer-text">Copyright © 2020 Maria Dominguez</p>
+                <h5 class="card-header">Studies</h5>
+                <p>Drexel University, 2020</p>
+                <p>Computer Science, B.S.</p>
+                <h6 class="card-subheader">Concentrations:</h6>
+                <ul>
+                    <li>
+                        <p>Human-Computer Interaction</p>
+                    </li>
+                    <li>
+                        <p>Software Engineering</p>
+                    </li>
+                </ul>
+                <h6 class="card-subheader">Minors:</h6>
+                <ul>
+                    <li>
+                        <p>Chemistry</p>
+                    </li>
+                    <li>
+                        <p>Interactive Digital Media</p>
+                    </li>
+                </ul>
+                <h5 class="card-header">Contact</h5>
+                <p>m2015dominguez@gmail.com</p>
+            </div>
         </div>
-    </div> -->
 
-    <!-- HOME -->
-    <!-- 
-        <div id="home" class="home main-container">
-           
-            <div class="home-bottom">
-                <div class="card"><img class="me-pic" src="me.jpg" /></div>
-                <div class="cards-right">
-                    <div class="card bio">
-                        <p class="bio-text">
-                            <span class="hiya pink-highlight">Hiya</span>, I’m Maria Dominguez and I like to design interfaces and develop various types of software. From time to time, I enjoying drawing characters from video games and anime. I also had
-                            a lot of fun designing and coding this website!
-                        </p>
+        <div class="col about-right">
+            <img class="me-pic-about" src="assets/me.jpg" />
+            <div class="about-icons">
+                <a href="mailto:m2015dominguez@gmail.com"><img class="icon" src="assets/mail.svg" /></a>
+                <a href="https://www.linkedin.com/in/mariasdominguez/" target="_blank"><img class="icon" src="assets/linkedin.svg" /></a>
+                <a href="https://github.com/msdominguez" target="_blank"><img class="icon" src="assets/github.svg" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="work page">
+        <div class="col">
+            <div class="card card-work">
+                <p class="work-timeline">June 2020-Present</p>
+                <span class="highlight"><h4 class="work-title">Developer</h4></span>
+                <h6 class="work-employer">Vanguard</h6>
+                <ul class="work-body">
+                    <li>
+                        <p>Utilized Angular and Redux on an Agile KanBan team to create and maintain the Vanguard website</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Wrote automated tests in Cypress to ensure UI functionality and quality</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Integrated Angular application with APIs and server side unit tests</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Gained experience querying and building dashboards in Splunk</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Contributed to design critique sessions</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-work">
+                <p class="work-timeline">Apr-Sep 2019</p>
+                <span class="highlight"><h4 class="work-title">Software Application Engineer Intern</h4></span>
+                <h6 class="work-employer">Comcast</h6>
+                <ul class="work-body">
+                    <li>
+                        <p>Programmed features in Angular JavaScript and Redux for a customer facing application handling millions of customer events</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Designed and implemented reusable web components in JavaScript, TypeScript, and HTML</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Collaborated with design to hone UX based on user feedback</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Participated daily in Agile scrum, sprint planning, and quarterly planning</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="projects page">
+        <div id="toast" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">Toast</h4></span>
+                    <h5 class="project-subtitle">Designer & Developer</h5>
+                    <p class="project-caption">Financial planning web app for clients and advisors</p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">Figma</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">React</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Redux</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">HTML</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">CSS</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JavaScript</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h4 class="card-header">
-                            <span class="pink-highlight">Studies</span>
-                        </h4>
-                        <p>Drexel University, 2020</p>
-                        <p>Computer Science, B.S.</p>
-                        <h5 class="card-subheader">Concentrations =</h5>
-                        <ul>
-                            <li>
-                                <p class="home-list-item">{Human-Computer Interaction} ∪</p>
-                            </li>
-                            <li>
-                                <p class="home-list-item">{Software Engineering}</p>
-                            </li>
-                        </ul>
-                        <h5 class="card-subheader">Minors =</h5>
-                        <ul>
-                            <li>
-                                <p class="home-list-item">{Chemistry} ∪</p>
-                            </li>
-                            <li>
-                                <p class="home-list-item">{Interactive Digital Media}</p>
-                            </li>
-                        </ul>
-                        <h4 class="card-header">
-                            <span class="pink-highlight">Contact</span>
-                        </h4>
-                        <p>m2015dominguez@gmail.com</p>
-                    </div>
+                </div>
+                <img class="proj-img" src="./assets/toast.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>June 2020</p>
+                    <p>Drexel University, eMoney</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://drive.google.com/file/d/1rtYaT51SfAJkvwHbKM6KGXP5jxk2SnbC/view?usp=sharing" target="_blank"><img class="icon small figma-icon" src="./assets/youtube.svg"></a>
+                    <a href="https://github.com/cci-toast/frontend" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
+                    <a href="https://www.figma.com/file/fWKfJDf1xPz2VZyWfDExmK/TOAST?node-id=1127%3A2" target="_blank"><img class="icon small figma-icon" src="./assets/figma.svg"></a>
                 </div>
             </div>
         </div>
-    </div> -->
 
+        <div id="popstar" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">Popstar Zodiac</h4></span>
+                    <h5 class="project-subtitle">Designer & Developer</h5>
+                    <p class="project-caption">Find out which pop star has the same zodiac sign as you!</p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">Figma</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">HTML</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">CSS</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JavaScript</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JQuery</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">AJAX</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="proj-img" src="./assets/popstar.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>March 2020</p>
+                    <p>Drexel University</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://github.com/msd96drexel/idm231-msd96" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
+                    <a href="https://www.figma.com/file/1qcXM4tFehB8GRXzJ5vItA/IDM-231?node-id=275%3A0" target="_blank"><img class="icon small figma-icon" src="./assets/figma.svg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="edrepoe" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">EdRepoe</h4></span>
+                    <h5 class="project-subtitle">Designer & Developer</h5>
+                    <p class="project-caption">A repository for teaching resources and materials that is a re-engineering of
+                        <a class="link" href="http://edrepo.sourceforge.net/" target="_blank">EdRepo</a></p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">Figma</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">HTML</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">CSS</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JavaScript</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JQuery</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">AJAX</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="proj-img" src="./assets/edrepoe.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>March 2020</p>
+                    <p>Drexel University</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://github.com/msd96drexel/EdRepoe" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
+                    <a href="https://www.figma.com/file/AOVQMFfySeEdjrqPlQczgQ/EdRepoe?node-id=137%3A2" target="_blank"><img class="icon small figma-icon" src="./assets/figma.svg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="scheduler" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">Drexel Scheduler</h4></span>
+                    <h5 class="project-subtitle">Designer & Developer</h5>
+                    <p class="project-caption">Generate all possible schedules for your school term</p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">Figma</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">HTML</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">CSS</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JavaScript</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">JQuery</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">AJAX</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Node.js</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Moment.js</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Cheerio.js</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Firebase</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="proj-img" src="./assets/scheduler.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>Sept 2020</p>
+                    <p>Drexel University</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://drexel-scheduler.web.app/" target="_blank"><img class="icon small external-link-icon" src="./assets/link.svg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="journal" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">Journal</h4></span>
+                    <h5 class="project-subtitle">Designer & Developer</h5>
+                    <p class="project-caption">Create and view journal entries</p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">Java Swing</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Java AWT</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="proj-img jou" src="./assets/jou-2.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>July 2019</p>
+                    <p>Personal Project</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://github.com/msdominguez/jou-2" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="pandamonium" class="card card-projects">
+            <div class="text-pic">
+                <div class="project-col">
+                    <span class="highlight"><h4 class="project-title">Pandamonium</h4></span>
+                    <h5 class="project-subtitle">Artist & Animator</h5>
+                    <p class="project-caption">A top-down role-playing game where the main character is a panda</p>
+                    <h6 class="project-subtitle">Tools:</h6>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <p class="tool-text">GIMP</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">C#</p>
+                        </div>
+                        <div class="tool">
+                            <p class="tool-text">Unity</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="proj-img" src="./assets/panda.png">
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-left">
+                    <p>June 2017</p>
+                    <p>Drexel University</p>
+                </div>
+                <div class="card-footer-right">
+                    <a href="https://www.youtube.com/watch?v=GACBGHe_PCM&feature=youtu.be" target="_blank"><img class="icon small" src="./assets/youtube.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">Copyright © 2021 Maria Dominguez</p>
+    </div>
+
+    <script src="index.js"></script>
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <script src="/__/firebase/7.8.1/firebase-app.js"></script>
-    <script src="/__/firebase/7.8.1/firebase-analytics.js"></script>
-    <script src="/__/firebase/init.js"></script>
     <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyAKNNSByd6dTSurAodlIdDZ6c8i5NX89f8",
-            authDomain: "mariasdominguez-d084a.firebaseapp.com",
-            databaseURL: "https://mariasdominguez-d084a.firebaseio.com",
-            projectId: "mariasdominguez-d084a",
-            storageBucket: "mariasdominguez-d084a.appspot.com",
-            messagingSenderId: "381117452410",
-            appId: "1:381117452410:web:a51b43c71e4d91427aebc3",
-            measurementId: "G-9L7V00YCKZ",
-        };
-        if (!firebase.apps.length) {
-            firebase.initializeApp(firebaseConfig);
-        }
-        firebase.analytics();
-
         function smoothScroll(goTo) {
             $("html, body").animate({
                     scrollTop: $(goTo).offset().top,
@@ -122,37 +404,14 @@
             );
         }
 
-        let win = $(window);
-        let headerAbout = $("#header-about");
-        let headerExp = $("#header-exp");
-        let headerProj = $("#header-proj");
-        let headerArt = $("#header-art");
-        let hclass = $(".header");
-
-        win.scroll(function() {
-            if (win.scrollTop() > headerAbout.offset().top) {
-                hclass.removeClass("sticky");
-                headerAbout.addClass("sticky");
-            }
-
-            if (win.scrollTop() > headerExp.offset().top) {
-                hclass.removeClass("sticky");
-                headerExp.addClass("sticky");
-            }
-
-            if (win.scrollTop() > headerProj.offset().top) {
-                hclass.removeClass("sticky");
-                headerProj.addClass("sticky");
-            }
-
-            if (win.scrollTop() > headerArt.offset().top) {
-                hclass.removeClass("sticky");
-                headerArt.addClass("sticky");
-            }
+        $(window).scroll(function() {
+            $('.page').addClass('page-top');
+            $('.logo-nav').addClass('logo-nav-sticky');
 
             // very top
-            if (win.scrollTop() < headerAbout.offset().top) {
-                hclass.removeClass("sticky");
+            if ($(window).scrollTop() <= 0) {
+                $('.page').removeClass('page-top');
+                $('.logo-nav').removeClass('logo-nav-sticky');
             }
         });
     </script>
