@@ -411,7 +411,7 @@ nav.nav-projects {
 
 .me-pic-home {
     width: 400px;
-    height: auto;
+    height: 100%;
     margin-left: -5rem;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
@@ -481,6 +481,7 @@ nav.nav-projects {
 
 .me-pic-about {
     width: 400px;
+    height: 350px;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
 }
