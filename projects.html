@@ -9,32 +9,40 @@
 <body onload="showProjectsPage()">
     <div class="main-bg-screen"></div>
 
-    <nav class="logo-nav">
-        <div class="logo-container">
-            <a href="/">
-                <img class="logo" src="./assets/logo.png" />
-            </a>
+    <nav class="nav-projects">
+        <div class="logo-nav">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="./assets/logo.png" />
+                </a>
+            </div>
+            <ul class="main-nav">
+                <li>
+                    <a href="/about">
+                        <h3 class="nav-link">About</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/work">
+                        <h3 class="nav-link">Work</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects">
+                        <h3 class="nav-link active">Projects</h3>
+                    </a>
+                </li>
+                <li>
+                    <h3 class="nav-link"><a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">Resume</a></h3>
+                </li>
+            </ul>
         </div>
-        <ul class="main-nav">
-            <li>
-                <a href="/about">
-                    <h3 class="nav-link">About</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/work">
-                    <h3 class="nav-link">Work</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/projects">
-                    <h3 class="nav-link">Projects</h3>
-                </a>
-            </li>
-            <li>
-                <h3 class="nav-link"><a href="https://drive.google.com/open?id=1kzmB4_7LEV_d8zMtM7r2zxgVyQNGXeVg" target="_blank">Resume</a></h3>
-            </li>
-        </ul>
+        <div class="dev-art">
+            <div class="toggle-knob"></div>
+            <label onclick="showProjectsPage()"><h5>Dev</h5></label>
+            <label onclick="showArtPage()"><h5>Art</h5></label>
+        </div>
+        </div>
     </nav>
 
     <div id="projects" class="projects page">
@@ -70,8 +78,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>June 2020</p>
-                    <p>Drexel University, eMoney</p>
+                    <p class="subtext">June 2020</p>
+                    <p class="subtext">Drexel University, eMoney</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://drive.google.com/file/d/1rtYaT51SfAJkvwHbKM6KGXP5jxk2SnbC/view?usp=sharing" target="_blank"><img class="icon small figma-icon" src="./assets/youtube.svg"></a>
@@ -116,8 +124,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>March 2020</p>
-                    <p>Drexel University</p>
+                    <p class="subtext">March 2020</p>
+                    <p class="subtext">Drexel University</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://github.com/msd96drexel/idm231-msd96" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
@@ -162,8 +170,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>March 2020</p>
-                    <p>Drexel University</p>
+                    <p class="subtext">March 2020</p>
+                    <p class="subtext">Drexel University</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://github.com/msd96drexel/EdRepoe" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
@@ -216,8 +224,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>Sept 2020</p>
-                    <p>Drexel University</p>
+                    <p class="subtext">Sept 2020</p>
+                    <p class="subtext">Drexel University</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://drexel-scheduler.web.app/" target="_blank"><img class="icon small external-link-icon" src="./assets/link.svg"></a>
@@ -245,8 +253,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>July 2019</p>
-                    <p>Personal Project</p>
+                    <p class="subtext">July 2019</p>
+                    <p class="subtext">Personal Project</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://github.com/msdominguez/jou-2" target="_blank"><img class="icon small" src="./assets/code.svg"></a>
@@ -277,8 +285,8 @@
             </div>
             <div class="card-footer">
                 <div class="card-footer-left">
-                    <p>June 2017</p>
-                    <p>Drexel University</p>
+                    <p class="subtext">June 2017</p>
+                    <p class="subtext">Drexel University</p>
                 </div>
                 <div class="card-footer-right">
                     <a href="https://www.youtube.com/watch?v=GACBGHe_PCM&feature=youtu.be" target="_blank"><img class="icon small" src="./assets/youtube.svg"></a>
@@ -326,22 +334,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="index.js"></script>
-    <script>
-        function smoothScroll(goTo) {
-            $("html, body").animate({
-                    scrollTop: $(goTo).offset().top,
-                },
-                800
-            );
-        }
-
-        $(window).scroll(function() {
-            $('.logo-nav').addClass('logo-nav-sticky');
-            if ($(window).scrollTop() < 1) {
-                $('.logo-nav').removeClass('logo-nav-sticky');
-            }
-        });
-    </script>
 </body>
 
 </html>

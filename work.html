@@ -9,7 +9,7 @@
 <body>
     <div class="main-bg-screen"></div>
 
-    <nav class="logo-nav">
+    <nav>
         <div class="logo-container">
             <a href="/">
                 <img class="logo" src="./assets/logo.png" />
@@ -23,7 +23,7 @@
             </li>
             <li>
                 <a href="/work">
-                    <h3 class="nav-link">Work</h3>
+                    <h3 class="nav-link active">Work</h3>
                 </a>
             </li>
             <li>
@@ -40,7 +40,7 @@
     <div id="work" class="work page">
         <div class="card-container">
             <div class="card card-work">
-                <p class="work-timeline">June 2020-Present</p>
+                <p class="work-timeline subtext">June 2020-Present</p>
                 <span class="highlight"><h4 class="work-title">Developer</h4></span>
                 <h6 class="work-employer">Vanguard</h6>
                 <ul class="work-body">
@@ -63,7 +63,7 @@
             </div>
 
             <div class="card card-work">
-                <p class="work-timeline">March-June 2020</p>
+                <p class="work-timeline subtext">March-June 2020</p>
                 <span class="highlight"><h4 class="work-title">Teacher's Assistant</h4></span>
                 <h6 class="work-employer">Drexel University</h6>
                 <ul class="work-body">
@@ -86,7 +86,7 @@
             </div>
 
             <div class="card card-work">
-                <p class="work-timeline">Apr-Sep 2019</p>
+                <p class="work-timeline subtext">Apr-Sep 2019</p>
                 <span class="highlight"><h4 class="work-title">Software Application Engineer</h4></span>
                 <h6 class="work-employer">Comcast Internship</h6>
                 <ul class="work-body">
@@ -116,22 +116,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="index.js"></script>
-    <script>
-        function smoothScroll(goTo) {
-            $("html, body").animate({
-                    scrollTop: $(goTo).offset().top,
-                },
-                800
-            );
-        }
-
-        $(window).scroll(function() {
-            $('.logo-nav').addClass('logo-nav-sticky');
-            if ($(window).scrollTop() < 1) {
-                $('.logo-nav').removeClass('logo-nav-sticky');
-            }
-        });
-    </script>
 </body>
 
 </html>

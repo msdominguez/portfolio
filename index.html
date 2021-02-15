@@ -9,7 +9,7 @@
 <body>
     <div class="main-bg-screen"></div>
 
-    <nav class="logo-nav">
+    <nav>
         <div class="logo-container">
             <a href="/">
                 <img class="logo" src="./assets/logo.png" />
@@ -52,22 +52,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="index.js"></script>
-    <script>
-        function smoothScroll(goTo) {
-            $("html, body").animate({
-                    scrollTop: $(goTo).offset().top,
-                },
-                800
-            );
-        }
-
-        $(window).scroll(function() {
-            $('.logo-nav').addClass('logo-nav-sticky');
-            if ($(window).scrollTop() < 1) {
-                $('.logo-nav').removeClass('logo-nav-sticky');
-            }
-        });
-    </script>
 </body>
 
 </html>

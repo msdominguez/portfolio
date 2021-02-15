@@ -21,3 +21,18 @@ window.addEventListener(
     },
     false
 );
+
+function smoothScroll(goTo) {
+    $("html, body").animate({
+            scrollTop: $(goTo).offset().top,
+        },
+        800
+    );
+}
+
+$(window).scroll(function() {
+    $('nav').addClass('nav-sticky');
+    if ($(window).scrollTop() < 1) {
+        $('nav').removeClass('nav-sticky');
+    }
+});
