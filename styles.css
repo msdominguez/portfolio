@@ -411,7 +411,7 @@ nav.nav-projects {
 
 .me-pic-home {
     width: 400px;
-    height: 100%;
+    height: 350px;
     margin-left: -5rem;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
@@ -506,7 +506,6 @@ nav.nav-projects {
 @media only screen and (max-width: 640px) {
     .me-pic-about {
         width: 100%;
-        height: auto;
         width: -moz-available;
         width: -webkit-fill-available;
         width: fill-available;
