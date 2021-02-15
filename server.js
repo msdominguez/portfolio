@@ -22,11 +22,11 @@ router.get("/projects", function(req, res) {
 });
 
 router.get("/idm231", function(req, res) {
-    res.sendFile(path.join('./idm231/index.html'));
+    res.sendFile(path.join(`${__dirname}/idm231/index.html`));
 });
 
 router.get("/idm231/detail", function(req, res) {
-    res.sendFile(path.join('./idm231/detail.html'));
+    res.sendFile(path.join(`${__dirname}/idm231/detail.html`));
 });
 
 app.get("/getZod", function(req, resp) {
