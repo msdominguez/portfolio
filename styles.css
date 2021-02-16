@@ -395,6 +395,7 @@ nav.nav-projects {
 .home {
     display: flex;
     flex-wrap: wrap;
+    max-height: 100vh;
 }
 
 .home-header {
@@ -410,8 +411,8 @@ nav.nav-projects {
 }
 
 .me-pic-home {
-    width: 400px;
-    height: 420px;
+    width: 95%;
+    height: auto;
     margin-left: -5rem;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
@@ -439,7 +440,6 @@ nav.nav-projects {
         justify-content: center;
     }
     .me-pic-home {
-        width: calc(100vw - 4rem);
         border: 0.5rem solid var(--msd-pink-2-30);
         border-radius: 1rem;
         margin-left: 0;
@@ -480,8 +480,8 @@ nav.nav-projects {
 }
 
 .me-pic-about {
-    width: 400px;
-    height: 420px;
+    width: 95%;
+    height: auto;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
 }
