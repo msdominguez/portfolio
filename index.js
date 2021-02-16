@@ -10,6 +10,14 @@ function showArtPage() {
     $('.toggle-knob').addClass('after');
 }
 
+function onClickToggle() {
+    if ($('.toggle-knob').hasClass('after')) {
+        showProjectsPage();
+    } else {
+        showArtPage();
+    }
+}
+
 // for css animations
 window.addEventListener(
     "scroll",
