@@ -40,7 +40,7 @@ function smoothScroll(goTo) {
 
 $(window).scroll(function() {
     $('nav').addClass('nav-sticky');
-    if ($(window).scrollTop() < 1) {
+    if ($(window).scrollTop() < 50) {
         $('nav').removeClass('nav-sticky');
     }
 });
