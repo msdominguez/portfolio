@@ -228,9 +228,6 @@ ul {
     .card-container .card {
         margin: 0 0 1.5rem 0;
     }
-    .col {
-        width: unset;
-    }
 }
 
 
