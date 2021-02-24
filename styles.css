@@ -411,7 +411,7 @@ nav.nav-projects {
 }
 
 .me-pic-home {
-    width: 95%;
+    width: 400px;
     height: auto;
     margin-left: -5rem;
     border-radius: 2rem;
@@ -440,6 +440,7 @@ nav.nav-projects {
         justify-content: center;
     }
     .me-pic-home {
+        width: 95%;
         border: 0.5rem solid var(--msd-pink-2-30);
         border-radius: 1rem;
         margin-left: 0;
@@ -480,7 +481,7 @@ nav.nav-projects {
 }
 
 .me-pic-about {
-    width: 95%;
+    width: 400px;
     height: auto;
     border-radius: 2rem;
     border: 1rem solid var(--msd-pink-2-30);
