@@ -431,15 +431,12 @@ nav.nav-projects {
     .home-header {
         padding-bottom: 1rem;
     }
-    .home-pic-container {
-        display: flex;
-        justify-content: center;
-    }
     .me-pic-home {
         width: calc(90vw - 1rem);
         border: 0.5rem solid var(--msd-pink-2-30);
         border-radius: 1rem;
         margin-left: 0;
+        align-self: center;
     }
 }
 
