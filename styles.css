@@ -87,7 +87,7 @@ body {
 @media only screen and (max-width: 640px) {
     body {
         background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') no-repeat;
-        background-attachment: fixed;
+        background-attachment: initial;
         background-size: cover;
         min-height: 100vh;
     }
