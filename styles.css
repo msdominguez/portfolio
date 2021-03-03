@@ -67,8 +67,8 @@ h6 {
 }
 
 body {
-    background: var(--msd-pink-1) url('./assets/pink\ fractal.webp') no-repeat;
-    background-attachment: fixed;
+    background: var(--msd-pink-1) url('./assets/pink\ fractal.png') fixed no-repeat center;
+    background-attachment: initial;
     background-size: cover;
     min-height: 100vh;
 }
@@ -86,7 +86,7 @@ body {
 
 @media only screen and (max-width: 640px) {
     body {
-        background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') no-repeat;
+        background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') fixed no-repeat center;
         background-attachment: initial;
         background-size: cover;
         min-height: 100vh;
@@ -104,9 +104,6 @@ body {
     }
     h5 {
         font-size: 16px;
-    }
-    body {
-        background-position: center;
     }
 }
 
