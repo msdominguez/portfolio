@@ -67,13 +67,15 @@ h6 {
 }
 
 body {
-    background: var(--msd-pink-1) url('./assets/pink\ fractal.png') fixed no-repeat center;
+    /* background: var(--msd-pink-1) url('./assets/pink\ fractal.png') fixed no-repeat center; */
+    background: var(--msd-pink-1);
     background-attachment: initial;
     background-size: cover;
     min-height: 100vh;
 }
 
-.main-bg-screen {
+
+/* .main-bg-screen {
     background-color: var(--msd-gray-3);
     opacity: 0.25;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
@@ -81,12 +83,24 @@ body {
     height: 100%;
     position: fixed;
     backdrop-filter: blur(1px);
-    z-index: -2;
+    z-index: -1;
+} */
+
+.card-bg {
+    background: var(--msd-pink-1) url('./assets/pink\ fractal.png') fixed no-repeat center;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    margin: -1.5rem;
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 640px) {
     body {
-        background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') fixed no-repeat center;
+        /* background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') fixed no-repeat center; */
+        background: var(--msd-pink-1);
         background-attachment: initial;
         background-size: cover;
         min-height: 100vh;
