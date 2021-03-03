@@ -87,7 +87,7 @@ body {
 } */
 
 .card-bg {
-    background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') fixed no-repeat center;
+    background: var(--msd-pink-1) url('./assets/pink\ fractal\ mobile.png') no-repeat center;
     opacity: 0.4;
     width: 100%;
     height: 100%;
