@@ -660,9 +660,6 @@ nav.nav-projects {
         border: 0.5rem solid var(--msd-pink-2-30);
         border-radius: 1rem;
     }
-    .card-projects {
-        width: unset;
-    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -740,6 +737,12 @@ nav.nav-projects {
 .card-projects {
     min-width: 70vw;
     margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-projects {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
