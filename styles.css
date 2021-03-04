@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
 /* shared & universal styles */
@@ -127,17 +127,10 @@ ul {
 }
 
 @media only screen and (max-width: 640px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: 900;
-    }
     h1 {
         font-size: 50px;
         letter-spacing: 1px;
+        font-weight: 900;
     }
     h2 {
         font-size: 20px;
