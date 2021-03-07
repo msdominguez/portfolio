@@ -744,10 +744,17 @@ nav.nav-projects {
     }
     .proj-img {
         max-width: 400px;
+        border: 0.5rem solid var(--msd-pink-2-30);
+        border-radius: 1rem;
+        margin-top: 1rem;
+        align-self: center;
+    }
+    .jou {
+        margin-right: unset;
     }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .text-pic {
         flex-direction: column;
     }
