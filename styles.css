@@ -460,7 +460,7 @@ nav.nav-projects {
 
 @media only screen and (max-width: 1024px) {
     nav {
-        width: calc(100vw - 10vw);
+        width: unset;
     }
     .main-nav {
         width: unset;
@@ -861,14 +861,14 @@ nav.nav-projects {
     align-items: center;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .art-img {
-        width: 300px;
+        width: 280px;
         padding-bottom: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .art-img {
         max-width: 100%;
         max-height: fit-content;
