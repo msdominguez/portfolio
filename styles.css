@@ -458,6 +458,12 @@ nav.nav-projects {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+    .main-nav {
+        width: unset;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         flex-direction: column;
