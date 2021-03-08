@@ -654,13 +654,10 @@ nav.nav-projects {
     padding: 1rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .card {
         width: 300px;
     }
-}
-
-@media only screen and (min-width: 768px) {
     .me-pic-about {
         width: 300px;
         margin: 1.5rem 0;
@@ -760,6 +757,14 @@ nav.nav-projects {
 @media only screen and (max-width: 1366px) {
     .proj-img {
         max-width: 50%;
+        height: auto;
+        border: 0.5rem solid var(--msd-pink-2-30);
+        border-radius: 1rem;
+        margin-top: 1rem;
+        align-self: center;
+    }
+    .card-projects {
+        width: 90%;
     }
 }
 
