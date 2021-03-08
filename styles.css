@@ -285,7 +285,7 @@ ul {
     margin: 0 10vw;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
     h1 {
         letter-spacing: 0px;
     }
