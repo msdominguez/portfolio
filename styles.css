@@ -299,6 +299,7 @@ ul {
     .card {
         padding: 1.5rem 2.25rem;
         width: unset;
+        min-height: unset;
         border-radius: 1rem;
     }
     .card-container {
