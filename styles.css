@@ -178,9 +178,6 @@ ul {
     p {
         font-size: 16px;
     }
-    body {
-        min-height: 100vh;
-    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -206,6 +203,9 @@ ul {
     p {
         font-size: 16px;
     }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1366px) {
     body {
         min-height: 100vh;
     }
