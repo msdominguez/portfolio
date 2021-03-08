@@ -72,6 +72,9 @@ h6 {
 body {
     background: var(--msd-pink-1);
     min-height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 body:before {
@@ -127,13 +130,13 @@ ul {
     padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     h1 {
-        font-size: 40px;
+        font-size: 55px;
         font-weight: 900;
     }
     h2 {
-        font-size: 25px;
+        font-size: 32px;
     }
     h3 {
         font-size: 25px;
@@ -152,13 +155,13 @@ ul {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 768px) {
     h1 {
-        font-size: 55px;
+        font-size: 40px;
         font-weight: 900;
     }
     h2 {
-        font-size: 32px;
+        font-size: 25px;
     }
     h3 {
         font-size: 25px;
@@ -545,7 +548,7 @@ nav.nav-projects {
     border: 1rem solid var(--msd-pink-2-30);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
     .home {
         justify-content: space-evenly;
         align-items: center;
