@@ -654,15 +654,18 @@ nav.nav-projects {
     padding: 1rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 300px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .me-pic-about {
         width: 300px;
         margin: 1.5rem 0;
         border: 0.5rem solid var(--msd-pink-2-30);
         border-radius: 1rem;
-    }
-    .card {
-        width: 300px;
     }
 }
 
