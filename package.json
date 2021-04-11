@@ -22,7 +22,6 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "heroku": "^7.52.0",
         "node": "^15.12.0"
     }
 }
