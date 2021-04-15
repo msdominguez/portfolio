@@ -904,3 +904,30 @@ nav.nav-projects {
         padding-bottom: 1.5rem;
     }
 }
+
+
+/* 404 */
+
+.body-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found-container {
+    margin: 0 2rem;
+}
+
+.not-found-404 {
+    color: var(--msd-black);
+    padding-bottom: 0.5rem;
+}
+
+.not-found-header {
+    color: var(--msd-black);
+    padding-bottom: 1rem;
+}
+
+.not-found-p {
+    color: var(--msd-gray-1);
+}
