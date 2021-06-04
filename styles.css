@@ -374,6 +374,18 @@ nav.nav-projects {
     display: flex;
 }
 
+.sticky-body {
+    margin-top: 5rem;
+}
+
+.nav-sticky+.projects,
+.nav-sticky+.work,
+.nav-sticky+.art,
+.nav-sticky+.about,
+.nav-sticky+.home {
+    padding-top: 15rem;
+}
+
 .nav-sticky::before {
     content: '';
     position: absolute;
@@ -385,8 +397,9 @@ nav.nav-projects {
 }
 
 .nav-sticky {
-    position: fixed;
     z-index: 1;
+    top: 0;
+    position: fixed;
     border-bottom: 1px solid var(--msd-gray-3-20);
     transition: all 300ms cubic-bezier(0.2, 0, 1, 1), border-bottom 0ms;
 }

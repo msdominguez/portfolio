@@ -54,7 +54,10 @@ function smoothScroll(goTo) {
 
 $(window).scroll(function() {
     $("nav").addClass("nav-sticky");
-    if ($(window).scrollTop() < 50) {
+    $("body").addClass("sticky-body");
+
+    if ($(window).scrollTop() < 100) {
         $("nav").removeClass("nav-sticky");
+        $("body").removeClass("sticky-body");
     }
 });
