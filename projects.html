@@ -7,7 +7,7 @@
 </head>
 
 <body onload="showProjectsPage()">
-    <nav class="nav-projects">
+    <nav>
         <div class="logo-nav">
             <div class="logo-container">
                 <a href="/">
@@ -35,8 +35,8 @@
                 </li>
             </ul>
         </div>
-        <div class="dev-art" onclick="onClickToggle()">
-            <div class="toggle-knob"></div>
+        <div class="dev-art" onclick="toggleProjects()">
+            <div id="toggle" class="toggle-knob"></div>
             <label><h5>Dev</h5></label>
             <label><h5>Art</h5></label>
         </div>
@@ -47,7 +47,7 @@
         <div id="jou-query" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Jou Query</h4></span>
+                    <h4 class="project-title">Jou Query</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">Create, view, edit, delete, favorite, and filter journal entries. Designed for iPhone XR.</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -99,7 +99,7 @@
         <div id="toast" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Toast</h4></span>
+                    <h4 class="project-title">Toast</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">Financial planning web app for clients and advisors. Designed for desktop.</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -145,7 +145,7 @@
         <div id="edrepoe" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">EdRepoe</h4></span>
+                    <span><h4 class="project-title">EdRepoe</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">A repository for teaching resources and materials that is a re-engineering of
                         <a class="link" href="http://edrepo.sourceforge.net/" target="_blank">EdRepo</a>. Designed for desktop.</p>
@@ -191,7 +191,7 @@
         <div id="popstar" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Popstar Zodiac</h4></span>
+                    <h4 class="project-title">Popstar Zodiac</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">Find out which pop star has the same zodiac sign as you! Designed for desktop.</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -242,7 +242,7 @@
         <div id="scheduler" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Drexel Scheduler</h4></span>
+                    <h4 class="project-title">Drexel Scheduler</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">Generate all possible schedules for your school term. Designed for desktop.</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -296,7 +296,7 @@
         <div id="journal" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Journal</h4></span>
+                    <h4 class="project-title">Journal</h4>
                     <h5 class="project-subtitle">Designer & Developer</h5>
                     <p class="project-caption">Create and view journal entries</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -325,7 +325,7 @@
         <div id="pandamonium" class="card card-projects">
             <div class="text-pic">
                 <div class="project-col">
-                    <span class="highlight"><h4 class="project-title">Pandamonium</h4></span>
+                    <h4 class="project-title">Pandamonium</h4>
                     <h5 class="project-subtitle">Artist & Animator</h5>
                     <p class="project-caption">A top-down role-playing game where the main character is a panda</p>
                     <h6 class="project-subtitle">Tools:</h6>
@@ -360,28 +360,28 @@
             <div class="card">
                 <img src="./assets/eevee.png" class="art-img" />
                 <div class="art-text">
-                    <h4><span class="highlight">Eevee</span></h4>
+                    <h4>Eevee</h4>
                     <p class="art-caption">Procreate</p>
                 </div>
             </div>
             <div class="card">
                 <img src="./assets/rosie.png" class="art-img" />
                 <div class="art-text">
-                    <h4><span class="highlight">Rosie</span></h4>
+                    <h4>Rosie</h4>
                     <p class="art-caption">Adobe Illustrator</p>
                 </div>
             </div>
             <div class="card">
                 <img src="./assets/marina.png" class="art-img" />
                 <div class="art-text">
-                    <h4><span class="highlight">Marina</span></h4>
+                    <h4>Marina</h4>
                     <p class="art-caption">Adobe Illustrator</p>
                 </div>
             </div>
             <div class="card">
                 <img src="./assets/pikachu.png" class="art-img" />
                 <div class="art-text">
-                    <h4><span class="highlight">Pikachu</span></h4>
+                    <h4>Pikachu</h4>
                     <p class="art-caption">GIMP</p>
                 </div>
             </div>
@@ -389,7 +389,7 @@
     </div>
 
     <div class="footer">
-        <p class="footer-text">Copyright © 2021 Maria Dominguez</p>
+        <p class="footer-text">© Maria Dominguez 2022</p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>

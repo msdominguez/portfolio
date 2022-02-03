@@ -8,52 +8,56 @@
 
 <body>
     <nav>
-        <div class="logo-container">
-            <a href="/">
-                <img class="logo" src="./assets/logo.png" />
-            </a>
+        <div class="logo-nav">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="./assets/logo.png" />
+                </a>
+            </div>
+            <ul class="main-nav">
+                <li>
+                    <a href="/about.html">
+                        <h3 class="nav-link">About</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/work.html">
+                        <h3 class="nav-link">Work</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects.html">
+                        <h3 class="nav-link">Projects</h3>
+                    </a>
+                </li>
+                <li>
+                    <h3 class="nav-link"><a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume</a></h3>
+                </li>
+            </ul>
         </div>
-        <ul class="main-nav">
-            <li>
-                <a href="/about.html">
-                    <h3 class="nav-link">About</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/work.html">
-                    <h3 class="nav-link">Work</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/projects.html">
-                    <h3 class="nav-link">Projects</h3>
-                </a>
-            </li>
-            <li>
-                <h3 class="nav-link">
-                    <a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume</a
-            >
-          </h3>
-        </li>
-      </ul>
+        <div class="dev-art hidden" onclick="toggleProjects()">
+            <div id="toggle" class="toggle-knob"></div>
+            <label><h5>Dev</h5></label>
+            <label><h5>Art</h5></label>
+        </div>
+        </div>
     </nav>
 
     <div id="home" class="home page">
-      <div class="home-headers">
-        <h2 class="home-subheader">Designer & Developer</h2>
-        <h1 class="home-header">Maria Dominguez</h1>
-      </div>
-      <div>
+        <div class="home-headers">
+            <h1 class="home-header">Maria Dominguez</h1>
+            <h2 class="home-subheader">Designer & Developer</h2>
+        </div>
         <img class="me-pic-home" src="./assets/me.jpg" />
-      </div>
     </div>
 
     <div class="footer">
-      <p class="footer-text">Copyright © 2021 Maria Dominguez</p>
+        <p class="footer-text">© Maria Dominguez 2022</p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

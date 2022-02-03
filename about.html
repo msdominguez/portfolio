@@ -8,46 +8,52 @@
 
 <body>
     <nav>
-        <div class="logo-container">
-            <a href="/">
-                <img class="logo" src="./assets/logo.png" />
-            </a>
+        <div class="logo-nav">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="./assets/logo.png" />
+                </a>
+            </div>
+            <ul class="main-nav">
+                <li>
+                    <a href="/about.html">
+                        <h3 class="nav-link active">About</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/work.html">
+                        <h3 class="nav-link">Work</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects.html">
+                        <h3 class="nav-link">Projects</h3>
+                    </a>
+                </li>
+                <li>
+                    <h3 class="nav-link"><a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume</a></h3>
+                </li>
+            </ul>
         </div>
-        <ul class="main-nav">
-            <li>
-                <a href="/about.html">
-                    <h3 class="nav-link active">About</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/work.html">
-                    <h3 class="nav-link">Work</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/projects.html">
-                    <h3 class="nav-link">Projects</h3>
-                </a>
-            </li>
-            <li>
-                <h3 class="nav-link">
-                    <a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume
-            </a>
-                </h3>
-            </li>
-        </ul>
+        <div class="dev-art hidden" onclick="toggleProjects()">
+            <div id="toggle" class="toggle-knob"></div>
+            <label><h5>Dev</h5></label>
+            <label><h5>Art</h5></label>
+        </div>
+        </div>
     </nav>
+
     <div id="about" class="about page">
         <div class="col about-left">
             <div class="card">
-                <!-- <div class="card-bg"></div> -->
                 <p class="bio-text">
-                    <span class="hiya">Hiya</span> , I’m Maria Dominguez, a UI designer and web developer. I also enjoy drawing characters from video games and anime.
+                    <span class="hello">Hello</span>, I’m Maria Dominguez! I'm a full stack web developer and UI designer. I am most experienced in designing and building web apps, but I also enjoy designing and building mobile apps. When I'm not coding,
+                    I also enjoy drawing, crafting, and listening to music.
                 </p>
-                <h5 class="card-header">Studies</h5>
+                <h4 class="card-header">Studies</h4>
                 <p>Drexel University, 2020</p>
                 <p>Computer Science, B.S.</p>
-                <h6 class="card-subheader">Concentrations:</h6>
+                <h5 class="card-subheader">Concentrations:</h5>
                 <ul>
                     <li>
                         <p>Human-Computer Interaction</p>
@@ -56,7 +62,7 @@
                         <p>Software Engineering</p>
                     </li>
                 </ul>
-                <h6 class="card-subheader">Minors:</h6>
+                <h5 class="card-subheader">Minors:</h5>
                 <ul>
                     <li>
                         <p>Chemistry</p>
@@ -65,7 +71,7 @@
                         <p>Interactive Digital Media</p>
                     </li>
                 </ul>
-                <h5 class="card-header">Contact</h5>
+                <h4 class="card-header">Contact</h4>
                 <p>
                     <a class="link" href="mailto:m2015dominguez@gmail.com">
               m2015dominguez@gmail.com
@@ -89,7 +95,7 @@
         </div>
     </div>
     <div class="footer">
-        <p class="footer-text">Copyright © 2021 Maria Dominguez</p>
+        <p class="footer-text">© Maria Dominguez 2022</p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>

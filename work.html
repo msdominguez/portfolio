@@ -8,155 +8,141 @@
 
 <body>
     <nav>
-        <div class="logo-container">
-            <a href="/">
-                <img class="logo" src="./assets/logo.png" />
-            </a>
+        <div class="logo-nav">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="./assets/logo.png" />
+                </a>
+            </div>
+            <ul class="main-nav">
+                <li>
+                    <a href="/about.html">
+                        <h3 class="nav-link">About</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/work.html">
+                        <h3 class="nav-link active">Work</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects.html">
+                        <h3 class="nav-link">Projects</h3>
+                    </a>
+                </li>
+                <li>
+                    <h3 class="nav-link"><a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume</a></h3>
+                </li>
+            </ul>
         </div>
-        <ul class="main-nav">
-            <li>
-                <a href="/about.html">
-                    <h3 class="nav-link">About</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/work.html">
-                    <h3 class="nav-link active">Work</h3>
-                </a>
-            </li>
-            <li>
-                <a href="/projects.html">
-                    <h3 class="nav-link">Projects</h3>
-                </a>
-            </li>
-            <li>
-                <h3 class="nav-link">
-                    <a href="https://drive.google.com/file/d/1rkR9bbSHGXsLHsVI07hQ8NEYCUgaPofA/view?usp=sharing" target="_blank">Resume</a
-            >
-          </h3>
-        </li>
-      </ul>
+        <div class="dev-art hidden">
+            <div id="toggle" class="toggle-knob" onclick="toggleProjects()"></div>
+            <label><h5>Dev</h5></label>
+            <label><h5>Art</h5></label>
+        </div>
+        </div>
+        </div>
     </nav>
 
     <div id="work" class="work page">
-      <div class="card-container">
-        <div class="card card-work">
-          <div class="card-bg"></div>
+        <div class="card-container">
+            <div class="card card-work">
+                <p class="work-timeline subtext">Jun 2020-Present</p>
+                <h4 class="work-title">Developer II</h4>
+                <h5 class="work-employer">Vanguard</h5>
+                <ul class="work-body">
+                    <li>
+                        <p>
+                            Utilized Angular and Redux on an Agile KanBan team to enable users to transfer their assets into Vanguard
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Wrote automated tests in Cypress to ensure UI functionality and quality
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Integrated Angular application with APIs and server-side unit tests
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Constructed queries and built app health dashboards in Splunk
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
-          <p class="work-timeline subtext">Jun 2020-Present</p>
-          <span class="highlight"><h4 class="work-title">Developer</h4></span>
-          <h6 class="work-employer">Vanguard</h6>
-          <ul class="work-body">
-            <li>
-              <p>
-                Utilized Angular and Redux on an Agile KanBan team to enable
-                users to transfer their assets into Vanguard
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Wrote automated tests in Cypress to ensure UI functionality and
-                quality
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Integrated Angular application with APIs and server-side unit
-                tests
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Gained experience querying and building app health dashboards in
-                Splunk
-              </p>
-            </li>
-          </ul>
+            <div class="card card-work">
+                <p class="work-timeline subtext">Mar-Jun 2020</p>
+                <h4 class="work-title">Teacher's Assistant</h4>
+                <h5 class="work-employer">Drexel University</h5>
+                <ul class="work-body">
+                    <li>
+                        <p>
+                            Helped teach the fundamentals of Git and KanBan to CCI students in a freshman design course
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>Facilitated lab activities for students each week</p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Graded and provided timely feedback on students' projects and assignments
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>Engaged one-on-one with students during weekly office hours</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card card-work">
+                <p class="work-timeline subtext">Apr-Sep 2019</p>
+                <h4 class="work-title">Software Application Engineering Co-op</h4>
+                <h5 class="work-employer">Comcast</h5>
+                <ul class="work-body">
+                    <li>
+                        <p>
+                            Programmed features in Angular and Redux for a customer facing application handling millions of customer events
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Designed and implemented reusable web components in JavaScript, TypeScript, and HTML
+                        </p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>Collaborated with design to hone UX based on user feedback</p>
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            Participated daily in Agile scrum, sprint planning, and quarterly planning
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="card card-work">
-          <div class="card-bg"></div>
-
-          <p class="work-timeline subtext">Mar-Jun 2020</p>
-          <span class="highlight"
-            ><h4 class="work-title">Teacher's Assistant</h4></span
-          >
-          <h6 class="work-employer">Drexel University</h6>
-          <ul class="work-body">
-            <li>
-              <p>
-                Helped teach the fundamentals of Git and KanBan to CCI students
-                in a freshman design course
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>Facilitated lab activities for students each week</p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Graded and provided timely feedback on students' projects and
-                assignments
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>Engaged one-on-one with students during weekly office hours</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card card-work">
-          <div class="card-bg"></div>
-
-          <p class="work-timeline subtext">Apr-Sep 2019</p>
-          <span class="highlight"
-            ><h4 class="work-title">
-              Software Application Engineering Co-op
-            </h4></span
-          >
-          <h6 class="work-employer">Comcast</h6>
-          <ul class="work-body">
-            <li>
-              <p>
-                Programmed features in Angular and Redux for a customer facing
-                application handling millions of customer events
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Designed and implemented reusable web components in JavaScript,
-                TypeScript, and HTML
-              </p>
-            </li>
-            <br />
-            <li>
-              <p>Collaborated with design to hone UX based on user feedback</p>
-            </li>
-            <br />
-            <li>
-              <p>
-                Participated daily in Agile scrum, sprint planning, and
-                quarterly planning
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
 
     <div class="footer">
-      <p class="footer-text">Copyright © 2021 Maria Dominguez</p>
+        <p class="footer-text">© Maria Dominguez 2022</p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
